@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/single_bid_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title"/>
+
+    <include layout="@layout/layout_no_data_view"/>
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/f"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_bid_name_and_project_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="4dp">
+
+            <RelativeLayout
+                android:id="@+id/ll_single_bid_p_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/iv_bid_returned_detail_right_arrow">
+
+                <TextView
+                    android:id="@+id/tv_bid_returned_detail_p_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:text="诚汇通"
+                    android:textColor="@color/c"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_single_bid_detail_auto_tally_icon"
+                    android:layout_width="42dp"
+                    android:layout_height="14dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_bid_returned_detail_p_name"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/auto_tally_tag"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_bid_back_detail_sync_ing"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:visibility="invisible"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ProgressBar
+                        android:id="@+id/layout_no_data_view_layout_hint_pb_loading"
+                        style="?android:attr/progressBarStyleInverse"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"/>
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/d"
+                        android:text="同步中..."/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_single_bid_detail_tb_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible"
+                    android:textColor="@color/d"
+                    android:textSize="12sp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_bid_returned_detail_project_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_below="@+id/ll_single_bid_p_name"
+                android:layout_toLeftOf="@+id/iv_bid_returned_detail_right_arrow"
+                android:padding="2dp"
+                android:text="酒店周转"
+                android:textColor="@color/d"
+                android:textSize="13sp"/>
+
+            <ImageView
+                android:id="@+id/iv_bid_returned_detail_right_arrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/btn_009_select"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/f"/>
+
+        <com.ypwl.xiaotouzi.view.InvestBackStackChartView
+            android:id="@+id/bid_returned_detail_bar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@color/g"/>
+
+        <ListView
+            android:id="@+id/single_bid_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/g"
+            android:dividerHeight="1dp"/>
+    </LinearLayout>
+
+</LinearLayout>

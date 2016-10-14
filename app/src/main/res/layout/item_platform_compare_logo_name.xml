@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/item_platform_compare_logo_name"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:padding="9dp">
+
+
+    <ImageView
+        android:id="@+id/iv_star_follow"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_centerVertical="true"
+        android:padding="6dp"
+        android:layout_marginLeft="4dp"
+        android:src="@mipmap/focus_blue_star"/>
+
+    <ImageView
+        android:id="@+id/iv_platform_logo"
+        android:layout_width="96dp"
+        android:layout_height="34dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/platform_compare_logo_bg"
+        android:padding="1dp"
+        android:src="@mipmap/pic_021"/>
+
+    <TextView
+        android:id="@+id/tv_platform_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="150dp"
+        android:text="诚汇通"
+        android:textColor="#000000"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:id="@+id/iv_delete_compare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/btn_045"/>
+</RelativeLayout>

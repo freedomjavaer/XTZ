@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/cal_kb_reset_btn_press" android:state_pressed="true" />
+    <item android:drawable="@drawable/cal_kb_reset_btn_press" android:state_hovered="true" />
+    <item android:drawable="@drawable/cal_kb_reset_btn_press" android:state_active="true" />
+    <item android:drawable="@drawable/cal_kb_reset_btn_press" android:state_selected="true" />
+    <item android:drawable="@drawable/cal_kb_reset_btn_press" android:state_focused="true" android:state_pressed="false" />
+    <item android:drawable="@drawable/cal_kb_reset_btn_normal" />
+
+</selector>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:expandable="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.ypwl.xiaotouzi.view.expandablelayout.ExpandableLayoutItem
+        android:id="@+id/invest_history_by_platform_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        expandable:el_contentLayout="@layout/item_invest_history_by_platform_content"
+        expandable:el_headerLayout="@layout/item_invest_history_by_platform_header"/>
+
+
+
+</RelativeLayout>

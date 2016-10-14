@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!--保障方式-->
+        <TextView
+            style="@style/platform_choice_popupwindow_tv"
+            android:layout_marginTop="3dp"
+            android:text="@string/activity_txt_guarantee_information"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/ipcp_choice_btn_number_1_1"
+                style="@style/platform_choice_popupwindow_btn_2"
+                android:gravity="center"
+                android:text="@string/activity_txt_escrow"
+                android:textOff="@string/activity_txt_escrow"
+                android:textOn="@string/activity_txt_escrow"/>
+
+            <ToggleButton
+                android:id="@+id/ipcp_choice_btn_number_1_2"
+                style="@style/platform_choice_popupwindow_btn_2"
+                android:layout_marginLeft="9dp"
+                android:text="@string/activity_txt_third_party_guarantee"
+                android:textOff="@string/activity_txt_third_party_guarantee"
+                android:textOn="@string/activity_txt_third_party_guarantee"/>
+
+            <ToggleButton
+                android:id="@+id/ipcp_choice_btn_number_1_3"
+                style="@style/platform_choice_popupwindow_btn_2"
+                android:layout_marginLeft="9dp"
+                android:visibility="gone"
+                android:text="视频认证"
+                android:textOff="视频认证"
+                android:textOn="视频认证"/>
+        </LinearLayout>
+
+        <!--平台背景-->
+        <TextView
+            style="@style/platform_choice_popupwindow_tv"
+            android:layout_marginTop="10dp"
+            android:text="@string/activity_txt_platform_background"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/ipcp_choice_btn_number_2_1"
+                style="@style/platform_choice_popupwindow_btn_2"
+                android:layout_marginLeft="10dp"
+                android:text="   银行   "
+                android:textOff="   银行   "
+                android:textOn="   银行   "/>
+
+            <ToggleButton
+                android:id="@+id/ipcp_choice_btn_number_2_2"
+                style="@style/platform_choice_popupwindow_btn_2"
+                android:layout_marginLeft="5dp"
+                android:text="   风投   "
+                android:textOff="   风投   "
+                android:textOn="   风投   "/>
+
+            <ToggleButton
+                android:id="@+id/ipcp_choice_btn_number_2_3"
+                style="@style/platform_choice_popupwindow_btn_2"
+                android:layout_marginLeft="5dp"
+                android:text="   国资   "
+                android:textOff="   国资   "
+                android:textOn="   国资   "/>
+
+            <ToggleButton
+                android:id="@+id/ipcp_choice_btn_number_2_4"
+                style="@style/platform_choice_popupwindow_btn_2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:text="   上市   "
+                android:textOff="   上市   "
+                android:textOn="   上市   "/>
+        </LinearLayout>
+
+
+        <!--标的类型-->
+        <TextView
+            style="@style/platform_choice_popupwindow_tv"
+            android:layout_marginTop="10dp"
+            android:text="标的类型"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/ipcp_choice_btn_number_3_1"
+                style="@style/platform_choice_popupwindow_btn_2"
+                android:layout_marginLeft="10dp"
+                android:text="   抵押   "
+                android:textOff="   抵押   "
+                android:textOn="   抵押   "/>
+
+            <ToggleButton
+                android:id="@+id/ipcp_choice_btn_number_3_2"
+                style="@style/platform_choice_popupwindow_btn_2"
+                android:layout_marginLeft="5dp"
+                android:text="   信用   "
+                android:textOff="   信用   "
+                android:textOn="   信用   "/>
+
+            <ToggleButton
+                android:id="@+id/ipcp_choice_btn_number_3_3"
+                style="@style/platform_choice_popupwindow_btn_2"
+                android:layout_marginLeft="5dp"
+                android:text="   票据   "
+                android:textOff="   票据   "
+                android:textOn="   票据   "/>
+
+            <ToggleButton
+                android:id="@+id/ipcp_choice_btn_number_3_4"
+                style="@style/platform_choice_popupwindow_btn_2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:text="债券转让"
+                android:textOff="债券转让"
+                android:textOn="债券转让"/>
+        </LinearLayout>
+
+        <!--地区-->
+        <TextView
+            style="@style/platform_choice_popupwindow_tv"
+            android:layout_marginTop="10dp"
+            android:text="地区"/>
+        <!--地区上-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/ipcp_choice_btn_number_4_1"
+                style="@style/platform_choice_popupwindow_btn_2"
+                android:layout_marginLeft="10dp"
+                android:text="   北京   "
+                android:textOff="   北京   "
+                android:textOn="   北京   "/>
+
+            <ToggleButton
+                android:id="@+id/ipcp_choice_btn_number_4_2"
+                style="@style/platform_choice_popupwindow_btn_2"
+                android:layout_marginLeft="5dp"
+                android:text="   上海   "
+                android:textOff="   上海   "
+                android:textOn="   上海   "/>
+
+            <ToggleButton
+                android:id="@+id/ipcp_choice_btn_number_4_3"
+                style="@style/platform_choice_popupwindow_btn_2"
+                android:layout_marginLeft="5dp"
+                android:text="   广东   "
+                android:textOff="   广东   "
+                android:textOn="   广东   "/>
+
+            <ToggleButton
+                android:id="@+id/ipcp_choice_btn_number_4_4"
+                style="@style/platform_choice_popupwindow_btn_2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:text="   浙江   "
+                android:textOff="   浙江   "
+                android:textOn="   浙江   "/>
+
+        </LinearLayout>
+
+        <!--地区下-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/ipcp_choice_btn_number_4_5"
+                style="@style/platform_choice_popupwindow_btn_2"
+                android:layout_marginLeft="10dp"
+                android:text="   江苏   "
+                android:textOff="   江苏   "
+                android:textOn="   江苏   "/>
+
+            <ToggleButton
+                android:id="@+id/ipcp_choice_btn_number_4_6"
+                style="@style/platform_choice_popupwindow_btn_2"
+                android:layout_marginLeft="5dp"
+                android:text="   山东   "
+                android:textOff="   山东   "
+                android:textOn="   山东   "/>
+
+            <ToggleButton
+                android:id="@+id/ipcp_choice_btn_number_4_7"
+                style="@style/platform_choice_popupwindow_btn_2"
+                android:layout_marginLeft="5dp"
+                android:text="   其他   "
+                android:textOff="   其他   "
+                android:textOn="   其他   "/>
+
+            <ToggleButton
+                style="@style/platform_choice_popupwindow_btn_2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:visibility="invisible"
+                />
+
+        </LinearLayout>
+
+
+        <!--标期长短-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                style="@style/platform_choice_popupwindow_tv"
+                android:text="标期长短"/>
+
+            <TextView
+                android:id="@+id/ipcp_choice_rb_period_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="1dp"
+                android:text="0个月"
+                android:textColor="@color/b"
+                android:textSize="11sp"/>
+
+            <com.ypwl.xiaotouzi.view.rangebar.RangeBar
+                android:id="@+id/ipcp_choice_rb_period"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginLeft="29dp"
+                android:layout_marginRight="29dp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/ipcp_choice_rb_period_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="31dp"
+                android:layout_marginTop="1dp"
+                android:text="36个月"
+                android:textColor="@color/b"
+                android:textSize="11sp"/>
+        </RelativeLayout>
+
+        <!--平均利率-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                style="@style/platform_choice_popupwindow_tv"
+                android:text="平均利率"/>
+
+            <TextView
+                android:id="@+id/ipcp_choice_rb_rate_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="1dp"
+                android:text="5%"
+                android:textColor="@color/b"
+                android:textSize="11sp"/>
+
+            <com.ypwl.xiaotouzi.view.rangebar.RangeBar
+                android:id="@+id/ipcp_choice_rb_rate"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginLeft="29dp"
+                android:layout_marginRight="29dp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/ipcp_choice_rb_rate_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="31dp"
+                android:layout_marginTop="1dp"
+                android:text="35%"
+                android:textColor="@color/b"
+                android:textSize="11sp"/>
+        </RelativeLayout>
+
+
+        <!--确定筛选-->
+        <TextView
+            android:id="@+id/ipcp_choice_btn_sure"
+            android:layout_width="106dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="22dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/platform_choice_btn_bg_selector_2"
+            android:gravity="center"
+            android:text="确定筛选"
+            android:textColor="@color/b"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:background="@color/c"/>
+
+</LinearLayout>

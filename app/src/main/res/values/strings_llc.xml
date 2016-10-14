@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+
+    <!--历史资产-->
+    <string name="assets_of_history_title">历史资产</string>
+
+</resources>

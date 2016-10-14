@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+
+    <corners android:radius="100dp" />
+
+    <solid android:color="#ff0000" />
+
+</shape>
+
+    <!--<item>//定义其他情况button的形态
+        <shape>
+            <solid android:color="@color/b" />
+            <corners android:radius="8dp" />
+            <padding android:left="10dp" android:top="10dp"
+                android:bottom="10dp" android:right="10dp"/>
+        </shape>
+    </item>
+
+
+
+</selector>-->

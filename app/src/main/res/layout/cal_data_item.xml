@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/calItemQishu"
+        android:layout_width="0dp"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:text="5/12"
+        android:paddingRight="2dp"
+        android:textColor="#333333"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/calItemYingshoubenjin"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="5000"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+        android:textColor="#333333"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/calItemYingshoushouyi"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="12.6"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+        android:textColor="#333333"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/calItemDaishoubenjin"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="1.2"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+        android:textColor="#333333"
+        android:textSize="13sp"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/calItemShishouzonge"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="512.2"
+        android:paddingLeft="3dp"
+        android:textColor="#333333"
+        android:textSize="13sp"/>
+</LinearLayout>

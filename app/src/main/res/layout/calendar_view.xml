@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="?styleCaldroidViewLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/calendar_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/calendar_left_arrow"
+            android:textColor="#dd3DB5E6"
+            android:textSize="15sp"
+            style="@style/CaldroidDefaultMonthName"/>
+
+        <TextView
+            android:id="@+id/calendar_month_year_textview"
+            android:textColor="#3DB5E6"
+            style="@style/CaldroidDefaultMonthName"/>
+
+        <TextView
+            android:id="@+id/calendar_right_arrow"
+            android:textColor="#dd3DB5E6"
+            android:textSize="15sp"
+            style="@style/CaldroidDefaultMonthName"/>
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/weekday_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:numColumns="7"
+        android:stretchMode="columnWidth">
+    </GridView>
+
+    <com.ypwl.xiaotouzi.view.calendar.InfiniteViewPager
+        android:id="@+id/months_infinite_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

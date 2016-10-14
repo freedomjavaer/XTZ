@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/custom_checkable_relative_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:text="评级"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/custom_checkable_relative_text"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/custom_checkable_relative_image_up"
+            android:layout_width="7dp"
+            android:layout_height="5dp"
+            android:layout_above="@+id/custom_checkable_relative_image_down"
+            android:src="@drawable/btn_016"/>
+
+
+        <ImageView
+            android:id="@+id/custom_checkable_relative_image_down"
+            android:layout_width="7dp"
+            android:layout_height="5dp"
+            android:layout_below="@+id/custom_checkable_relative_image_up"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/btn_017_select"/>
+
+    </LinearLayout>
+
+
+</merge>

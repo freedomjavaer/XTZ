@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linearLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/custom_key_board"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="14dp"
+        android:background="@color/f"/>
+
+    <RelativeLayout
+        android:id="@+id/touziLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_column="0"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_row="0"
+            android:text="@string/activity_account_investment_iv_amount"
+            android:textColor="#7c7c7c"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/calInvMoney"
+            android:layout_width="184dp"
+            android:layout_height="33dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_toRightOf="@+id/textView"
+            android:background="#ffffff"
+            android:cursorVisible="true"
+            android:digits="0123456789."
+            android:ems="10"
+            android:hint="0.00"
+            android:inputType="none"
+            android:maxLength="11"
+            android:textColor="#333333"
+            android:textColorHint="@color/e"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView"
+            android:layout_centerVertical="true"
+            android:layout_column="3"
+            android:layout_gravity="right"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_row="0"
+            android:text="@string/activity_account_investment_amoun_Unit"
+            android:textColor="#7c7c7c"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="14dp"
+        android:background="@color/f"/>
+
+    <RelativeLayout
+        android:id="@+id/lilvLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_column="0"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_row="1"
+            android:text="@string/activity_txt_interest_rate_one"
+            android:textColor="#7c7c7c"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/calInvRate"
+            android:layout_width="94dp"
+            android:layout_height="33dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_toEndOf="@+id/textView4"
+            android:layout_toRightOf="@+id/textView4"
+            android:background="#ffffff"
+            android:cursorVisible="true"
+            android:digits="0123456789."
+            android:ems="10"
+            android:hint="0.00"
+            android:inputType="none"
+            android:maxLength="5"
+            android:textColor="#333333"
+            android:textColorHint="@color/e"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/cal_btn_year_rate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/cal_share_account_checked_left"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/activity_account_per_income_year"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/cal_btn_month_rate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/cal_share_account_unchecked_right"
+                android:onClick="onClick"
+                android:text="@string/activity_account_investment_income_day"
+                android:textColor="#3487ea"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="14dp"
+        android:background="@color/f"/>
+
+    <RelativeLayout
+        android:id="@+id/qixianLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="14dp"
+            android:text="@string/activity_txt_bid_deadline"
+            android:textColor="#7c7c7c"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/calInvCycle"
+            android:layout_width="94dp"
+            android:layout_height="33dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:background="#ffffff"
+            android:cursorVisible="true"
+            android:digits="0123456789"
+            android:ems="10"
+            android:hint="0"
+            android:inputType="none"
+            android:maxLength="3"
+            android:textColor="#333333"
+            android:textColorHint="@color/e"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cal_btn_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/cal_share_account_checked_left"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/activity_account_investment_horizon_month"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/cal_btn_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/cal_share_account_unchecked_right"
+                android:onClick="onClick"
+                android:text="@string/activity_account_investment_horizon_day"
+                android:textColor="#3487ea"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="14dp"
+        android:background="@color/f"/>
+
+    <RelativeLayout
+        android:id="@+id/fangshiLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_column="0"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_row="3"
+            android:text="@string/activity_account_Payment_tv_method"
+            android:textColor="#7c7c7c"
+            android:textSize="16sp"/>
+
+        <Spinner
+            android:id="@+id/calSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView6"
+            android:background="#ffffff"
+            android:spinnerMode="dialog"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/calSpinner"
+            android:layout_alignRight="@+id/calSpinner"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/btn_018"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="14dp"
+        android:background="@color/f"/>
+
+    <LinearLayout
+        android:id="@+id/qitaLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_column="0"
+                android:layout_marginLeft="14dp"
+                android:layout_row="4"
+                android:text="@string/activity_txt_reward_one"
+                android:textColor="#7c7c7c"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/calInvExtra"
+                android:layout_width="70dp"
+                android:layout_height="33dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:layout_row="4"
+                android:layout_toRightOf="@+id/textView13"
+                android:background="#ffffff"
+                android:cursorVisible="true"
+                android:digits="0123456789."
+                android:ems="10"
+                android:hint="0.00"
+                android:inputType="none"
+                android:maxLength="5"
+                android:textColor="#333333"
+                android:textColorHint="@color/e"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+
+        <!--<View-->
+        <!--android:id="@+id/view"-->
+        <!--android:layout_width="1dip"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_toEndOf="@+id/calInvExtra"-->
+        <!--android:layout_toRightOf="@+id/calInvExtra"-->
+        <!--android:background="#cccccc"/>-->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_column="2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_row="4"
+                android:text="@string/activity_txt_interest_management_fees"
+                android:textColor="#7c7c7c"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/calInvCost"
+                android:layout_width="88dp"
+                android:layout_height="33dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_column="3"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_row="4"
+                android:layout_toRightOf="@+id/textView7"
+                android:background="#ffffff"
+                android:cursorVisible="true"
+                android:digits="0123456789."
+                android:ems="10"
+                android:hint="0.00"
+                android:inputType="none"
+                android:maxLength="5"
+                android:textColor="#333333"
+                android:textColorHint="@color/e"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

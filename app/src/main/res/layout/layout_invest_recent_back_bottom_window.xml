@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/pop_layout"
+              android:paddingLeft="30dp"
+              android:paddingRight="30dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingBottom="10dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_rectangle_invest_back_status_change_bg_normal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#7c7c7c"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:text="改变状态"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/f"/>
+
+        <com.ypwl.xiaotouzi.view.FlowLayout
+            android:id="@+id/fl_choose_item_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_invest_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="取消"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/shape_rectangle_invest_back_status_change_bg_selector"
+        android:textColor="#2c7de1"
+        android:textSize="16sp"/>
+
+</LinearLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="25dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_fancy_cover_item_p_logo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:padding="1dp"
+                android:background="@drawable/cal_share_my_mobel_image_bg"
+                android:src="@mipmap/first_accrual"/>
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_fancy_cover_item_p_name"-->
+            <!--android:layout_toRightOf="@id/iv_fancy_cover_item_p_logo"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text="小牛在线"-->
+            <!--android:textColor="#2C2C2C"-->
+            <!--android:textSize="16sp"/>-->
+
+            <TextView
+                android:id="@+id/tv_fancy_cover_item_bid_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/iv_fancy_cover_item_p_logo"
+                android:drawablePadding="8dp"
+                android:singleLine="true"
+                android:text="富盈人生-哈哈哈哈哈"
+                android:textColor="#2C2C2C"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_fancy_cover_item_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10.00"
+                        android:textColor="#2C2C2C"
+                        android:textSize="23sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%"
+                        android:textColor="#2C2C2C"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="年化率"
+                    android:textColor="#939393"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="#FF3838"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:id="@+id/layout_extra_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_fancy_cover_item_rate_extra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6.30"
+                        android:textColor="#FF3838"
+                        android:textSize="23sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv_fancy_cover_item_rate_extra_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%"
+                        android:textColor="#FF3838"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_fancy_cover_item_rate_extra_info"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:singleLine="true"-->
+                <!--android:text="晓投资加息"-->
+                <!--android:textColor="#939393"-->
+                <!--android:textSize="12sp"/>-->
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_fancy_cover_item_time_limit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textColor="#2C2C2C"
+                        android:textSize="23sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv_fancy_cover_item_time_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="个月"
+                        android:textColor="#939393"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="投资期限"
+                    android:textColor="#939393"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_fancy_cover_item_p_logo"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="38dp"-->
+            <!--android:layout_marginLeft="19dp"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@mipmap/pic_021"/>-->
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_accrual_type"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="120dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

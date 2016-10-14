@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:descendantFocusability="blocksDescendants"
+                android:background="@color/caldroid_white">
+
+    <ImageView
+        android:id="@+id/item_focus_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="7dp"
+        android:layout_alignParentLeft="true"
+        android:background="@mipmap/btn_015"/>
+
+    <LinearLayout
+        android:layout_toRightOf="@id/item_focus_choice"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/item_focus_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="1dp"
+            android:background="@drawable/cal_share_my_mobel_image_bg"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/pic_021"/>
+        <TextView
+            android:id="@+id/item_focus_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:textSize="14sp"
+            android:textColor="@color/caldroid_black"
+            android:text="晓投资"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/item_focus_star"
+        android:layout_alignParentRight="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="20dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/focus_blue_star"/>
+
+</RelativeLayout>

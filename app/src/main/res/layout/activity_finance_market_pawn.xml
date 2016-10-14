@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:fitsSystemWindows="true"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/top_title"/>
+
+    <include layout="@layout/layout_no_data_view"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_data_content_view"
+        android:layout_below="@+id/layout_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/map_container"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <com.amap.api.maps.MapView
+                android:id="@+id/pawn_mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:visibility="invisible">
+            </com.amap.api.maps.MapView>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/map_container"
+            android:id="@+id/rv_pawn_search_result_list"
+            android:visibility="invisible"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_error_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_below="@id/layout_title_view">
+
+            <ImageView
+                android:id="@+id/iv_no_data_cat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/cat"/>
+
+            <Button
+                android:id="@+id/btn_error_load_again"
+                android:text="重新加载"
+                android:textColor="@color/a"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/iv_no_data_cat"
+                android:layout_marginTop="10dp"
+                android:background="@color/f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/finance_supermarket_item_space">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_base_item_finance_supermarket_of_more"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/base_item_finance_supermarket_of_more_iv_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/pic_finance_supermarket_more_impawn"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/base_item_finance_supermarket_of_more_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hehe"
+                android:textColor="@color/finance_supermarket_text_name"
+                android:textSize="15sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp">
+
+                <TextView
+                    android:id="@+id/base_item_finance_supermarket_of_more_info_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hehe"
+                    android:textColor="@color/finance_supermarket_text_info"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/base_item_finance_supermarket_of_more_info_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="hehe"
+                    android:textColor="@color/finance_supermarket_text_info"
+                    android:textSize="13sp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

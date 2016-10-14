@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/item_all_back_by_platform_content"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="14dp"
+              android:paddingBottom="14dp"
+              android:background="@drawable/selector_color_bg_gray_deepgray"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_invest_by_platform_bid_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_weight="0.9"
+        android:singleLine="true"
+        android:text="酒店周转"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_invest_by_platform_item_bid_money"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="6dp"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:text="待回666元"
+        android:textColor="@color/black"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_invest_by_platform_bid_end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="12dp"
+        android:singleLine="true"
+        android:text="2016/4/2结束"
+        android:textColor="@color/d"
+        android:textSize="12sp"/>
+
+</LinearLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/selector_color_bg_gray_white"
+              android:orientation="vertical">
+
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:paddingBottom="20dp"
+         android:paddingLeft="13dp"
+         android:paddingRight="14dp"
+         android:paddingTop="20dp">-->
+
+    <!-- <TextView
+         android:id="@+id/item_finance_supermarket_of_choice_tv_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom"
+         android:textColor="@color/finance_supermarket_choice_text_black"
+         android:textSize="15sp"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="19dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_finance_supermarket_of_choice_iv_logo"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/cal_share_my_mobel_image_bg"
+            android:padding="1dp"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_finance_supermarket_of_choice_tv_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="14dp"
+                android:drawableRight="@drawable/pic_xi"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:textColor="@color/finance_supermarket_choice_text_black"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/item_finance_supermarket_of_choice_tv_yield"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/finance_supermarket_choice_text_black"
+                        android:textSize="23sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/item_finance_supermarket_of_choice_tv_yield"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@id/item_finance_supermarket_of_choice_tv_yield"
+                        android:text="@string/keep_accounts_btn_per_cent"
+                        android:textColor="@color/finance_supermarket_choice_text_black"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/item_finance_supermarket_of_choice_tv_yield"
+                        android:text="@string/finance_supermarket_target_list_yield_info"
+                        android:textColor="@color/finance_supermarket_choice_text_gray"
+                        android:textSize="12sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_finance_supermarket_of_choice_rl_jiaxi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/item_finance_supermarket_of_choice_tv_jia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/finance_supermarket_target_list_plus_sign"
+                        android:textColor="@color/finance_supermarket_choice_text_gray"
+                        android:textSize="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/item_finance_supermarket_of_choice_tv_jia"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/item_finance_supermarket_of_choice_ll_jiaxi_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/item_finance_supermarket_of_choice_tv_jiaxi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1.0"
+                                android:textColor="@color/finance_supermarket_choice_text_red"
+                                android:textSize="23sp"
+                                android:textStyle="bold"/>
+
+
+                            <TextView
+                                android:id="@+id/item_finance_supermarket_of_choice_tv_jiaxi_unit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:text="@string/keep_accounts_btn_per_cent"
+                                android:textColor="@color/finance_supermarket_choice_text_red"
+                                android:textSize="14sp"/>
+
+                        </LinearLayout>
+
+                        <!--<TextView
+                            android:id="@+id/item_finance_supermarket_of_choice_tv_jiaxi_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="12sp"/>-->
+
+                        <ImageView
+                            android:id="@+id/item_finance_supermarket_of_choice_iv_jiaxi_type"
+                            android:layout_width="65dp"
+                            android:src="@mipmap/pic_add_xi_type"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/item_finance_supermarket_of_choice_tv_period"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/finance_supermarket_choice_text_black"
+                            android:textSize="23sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/item_finance_supermarket_of_choice_tv_period_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:text="个月"
+                            android:textColor="@color/finance_supermarket_choice_text_gray"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/item_finance_supermarket_of_choice_tv_period_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="right"
+                        android:gravity="right|bottom"
+                        android:text="@string/finance_supermarket_target_list_period_info"
+                        android:textColor="@color/finance_supermarket_choice_text_gray"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="1dp"
+        android:background="@color/base_line"/>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/invest_fenbu_item_content_item"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/selector_color_bg_gray_deepgray"
+              android:orientation="vertical">
+    <!--android:background="?android:selectableItemBackground"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="44dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/tv_invest_analysis_bid_name"
+            android:singleLine="true"
+            android:text="酒店资金周转"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_invest_analysis_bid_money"
+            android:layout_toRightOf="@+id/tv_invest_analysis_bid_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:text="投资100.00"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_invest_analysis_bid_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1天"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_invest_analysis_p_name"
+            android:layout_height="wrap_content"
+            android:layout_width="90dp"
+            android:layout_marginLeft="59dp"
+            android:singleLine="true"
+            android:text="酒店资金周转"
+            android:visibility="visible"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_invest_analysis_bid_money2"
+            android:layout_toRightOf="@+id/tv_invest_analysis_p_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:text="投资100.00"
+            android:visibility="visible"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_invest_analysis_bid_name2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="103dp"
+        android:layout_marginRight="20dp"
+        android:singleLine="true"
+        android:text="酒店资金周转"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#EBEBEB"/>
+
+</LinearLayout>

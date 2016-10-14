@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/myinfo_bg_color"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/myinfo_bg_color"/>
+
+        <!--回款提醒-->
+        <RelativeLayout
+            android:id="@+id/layout_item_backmoney_hint"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="?android:selectableItemBackground">
+
+            <TextView
+                style="@style/setting_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_info_backmoney_remind"
+                android:textColor="@color/c"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/layout_item_backmoney_hint_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin20"
+                android:src="@mipmap/btn_046"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/myinfo_bg_color"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/my_info_backmoney_warn"
+            android:textSize="11sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/myinfo_bg_color"/>
+
+        <!-- 手势密码开关-->
+        <RelativeLayout
+            android:id="@+id/layout_item_gesture_password_switch"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="?android:selectableItemBackground">
+
+            <TextView
+                style="@style/setting_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_info_getsture_password"
+                android:textColor="@color/c"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/layout_item_psw_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin20"
+                android:src="@mipmap/btn_046"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/myinfo_bg_color"/>
+        <!-- 修改手势密码 -->
+        <RelativeLayout
+            android:id="@+id/layout_item_change_getsture_password"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="?android:selectableItemBackground"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/setting_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_info_change_getsture_password"/>
+
+            <ImageView
+                style="@style/me_framgment_iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/btn_009"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

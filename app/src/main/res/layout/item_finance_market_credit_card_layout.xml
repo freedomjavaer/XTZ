@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/finance_credit_card_item"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="15dp"
+              android:background="?android:selectableItemBackground"
+              android:orientation="horizontal">
+
+        <com.ypwl.xiaotouzi.view.CustomRoundImageView
+            android:id="@+id/iv_finance_credit_card_icon"
+            android:layout_width="97dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@mipmap/pic_021"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_finance_credit_card_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="广发DIY信用卡"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_finance_credit_card_intro1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:drawableLeft="@mipmap/five_pointed_star"
+                android:drawablePadding="4dp"
+                android:text="广发DIY信用卡"
+                android:textColor="#8E8E93"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_finance_credit_card_intro2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:text="广发DIY信用卡"
+                android:textColor="#8E8E93"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+</LinearLayout>

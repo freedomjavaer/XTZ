@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_title"/>
+
+    <include layout="@layout/layout_no_data_view"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_data_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.ypwl.xiaotouzi.view.MeasuredGridView
+                android:id="@+id/gv_bank_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:verticalSpacing="17dp"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:paddingTop="17dp"
+                android:paddingBottom="17dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EFEFF4"
+                android:padding="15dp"
+                android:text="热门"
+                android:textColor="#6E6E70"
+                android:textSize="16sp"/>
+
+            <com.ypwl.xiaotouzi.view.MeasuredListView
+                android:id="@+id/rv_credit_card_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="1dp"
+                android:divider="@color/f"
+                android:background="@color/white"
+                android:scrollbars="none"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

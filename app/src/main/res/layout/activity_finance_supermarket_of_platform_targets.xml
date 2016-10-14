@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+             android:layout_height="match_parent">
+
+    <include layout="@layout/top_title"/>
+
+    <include layout="@layout/layout_no_data_view"/>
+
+    <com.andview.refreshview.XRefreshView
+        android:id="@+id/activity_finance_supermarket_of_platform_targets_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ypwl.xiaotouzi.view.LoadMoreListView
+            android:id="@+id/activity_finance_supermarket_of_platform_targets_lv_loadmorelistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:scrollbars="none"/>
+
+    </com.andview.refreshview.XRefreshView>
+
+</LinearLayout>

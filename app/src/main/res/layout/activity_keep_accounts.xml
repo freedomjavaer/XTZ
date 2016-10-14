@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_title"/>
+
+    <include layout="@layout/layout_no_data_view"/>
+
+    <LinearLayout
+        android:id="@+id/activity_keep_accounts_ll_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:id="@+id/activity_keep_accounts_sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:focusableInTouchMode="false"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/keep_accounts_bg"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/keep_accounts_spacing"/>
+
+                <LinearLayout
+                    android:id="@+id/activity_keep_accounts_ll_choose_platform"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/keep_accounts_platform_name"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/activity_keep_accounts_tv_show_choose_platform"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:layout_weight="1"
+                        android:hint="@string/keep_accounts_hint_choose_platform"
+                        android:maxLength="10"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textColorHint="@color/keep_accounts_text_hint"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:src="@drawable/btn_009"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/keep_accounts_line"/>
+
+                <LinearLayout
+                    android:id="@+id/activity_keep_accounts_ll_choose_value_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/keep_accounts_value_date"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/activity_keep_accounts_tv_show_choose_value_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/activity_keep_accounts_tv_show_choose_value_date_range"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/keep_accounts_line"/>
+
+                <LinearLayout
+                    android:id="@+id/activity_keep_accounts_ll_object_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/keep_accounts_object_name"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/activity_keep_accounts_et_object_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:hint="@string/keep_accounts_hint_obj_name"
+                        android:background="@null"
+                        android:maxLength="16"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/keep_accounts_spacing"/>
+
+                <LinearLayout
+                    android:id="@+id/activity_keep_accounts_ll_investment_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/keep_accounts_investment_amount"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textSize="15sp"/>
+
+
+                    <EditText
+                        android:id="@+id/activity_keep_accounts_et_investment_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:background="@null"
+                        android:hint="@string/keep_accounts_hint_required_content"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textColorHint="@color/keep_accounts_text_hint"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/activity_keep_accounts_tv_investment_amount_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/keep_accounts_btn_yuan"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textSize="15sp"
+                        android:visibility="invisible"/>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/keep_accounts_line"/>
+
+                <LinearLayout
+                    android:id="@+id/activity_keep_accounts_ll_bonus_principal"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/keep_accounts_bonus_principal"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textSize="15sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/activity_keep_accounts_et_bonus_principal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="17dp"
+                            android:background="@null"
+                            android:hint="@string/keep_accounts_hint_optional_content"
+                            android:textColor="@color/keep_accounts_text_value"
+                            android:textColorHint="@color/keep_accounts_text_hint"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:id="@+id/activity_keep_accounts_tv_bonus_principal_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/keep_accounts_text_value"
+                            android:textSize="15sp"
+                            android:visibility="invisible"/>
+
+                        <TextView
+                            android:id="@+id/activity_keep_accounts_tv_bonus_principal_reckon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/keep_accounts_text_value"
+                            android:textSize="12sp"/>
+
+
+                    </LinearLayout>
+
+                    <com.ypwl.xiaotouzi.view.RadioTab
+                        android:id="@+id/activity_keep_accounts_rt_bonus_principal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@color/keep_accounts_spacing"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="28dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/activity_keep_accounts_total_investment_placeholder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/keep_accounts_bonus_principal"
+                            android:textSize="15sp"
+                            android:visibility="invisible"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@id/activity_keep_accounts_total_investment_placeholder"
+                            android:layout_centerVertical="true"
+                            android:text="@string/keep_accounts_total_investment"
+                            android:textColor="@color/keep_accounts_text_key"
+                            android:textSize="12sp"/>
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/activity_keep_accounts_tv_total_principal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="18dp"
+                        android:layout_weight="0"
+                        android:textColor="@color/keep_accounts_text_key"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/activity_keep_accounts_ll_money_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/keep_accounts_money_rate"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textSize="15sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/activity_keep_accounts_et_money_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="17dp"
+                            android:background="@null"
+                            android:hint="@string/keep_accounts_hint_required_content"
+                            android:textColor="@color/keep_accounts_text_value"
+                            android:textColorHint="@color/keep_accounts_text_hint"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:id="@+id/activity_keep_accounts_tv_money_rate_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/keep_accounts_btn_per_cent"
+                            android:textColor="@color/keep_accounts_text_value"
+                            android:textSize="15sp"
+                            android:visibility="invisible"/>
+                    </LinearLayout>
+
+                    <com.ypwl.xiaotouzi.view.RadioTab
+                        android:id="@+id/activity_keep_accounts_rt_money_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/keep_accounts_line"/>
+
+                <LinearLayout
+                    android:id="@+id/activity_keep_accounts_ll_period"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/keep_accounts_period"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textSize="15sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/activity_keep_accounts_et_period"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="17dp"
+                            android:background="@null"
+                            android:hint="@string/keep_accounts_hint_required_content"
+                            android:maxLength="2"
+                            android:textColor="@color/keep_accounts_text_value"
+                            android:textColorHint="@color/keep_accounts_text_hint"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:id="@+id/activity_keep_accounts_tv_period_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/keep_accounts_text_value"
+                            android:textSize="15sp"
+                            android:visibility="invisible"/>
+
+                    </LinearLayout>
+
+                    <com.ypwl.xiaotouzi.view.RadioTab
+                        android:id="@+id/activity_keep_accounts_rt_period"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/activity_keep_accounts_line_year_day_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/keep_accounts_line"/>
+
+                <RelativeLayout
+                    android:id="@+id/activity_keep_accounts_rl_year_day_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/keep_accounts_year_day_num"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/activity_keep_accounts_iv_year_day_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/btn_046"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/keep_accounts_line"/>
+
+                <LinearLayout
+                    android:id="@+id/activity_keep_accounts_ll_choose_repayment_method"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/keep_accounts_repayment_method"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/activity_keep_accounts_tv_show_choose_repayment_method"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:hint="@string/keep_accounts_hint_choose_repayment_method"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textColorHint="@color/keep_accounts_text_hint"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/keep_accounts_spacing"/>
+
+                <LinearLayout
+                    android:id="@+id/activity_keep_accounts_ll_bid_reward"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/keep_accounts_bid_reward"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textSize="15sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/activity_keep_accounts_et_bid_reward"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:background="@null"
+                            android:hint="@string/keep_accounts_hint_optional_content"
+                            android:textColor="@color/keep_accounts_text_value"
+                            android:textColorHint="@color/keep_accounts_text_hint"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:id="@+id/activity_keep_accounts_tv_bid_reward_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/keep_accounts_btn_per_cent"
+                            android:textColor="@color/keep_accounts_text_value"
+                            android:textSize="15sp"
+                            android:visibility="invisible"/>
+
+                    </LinearLayout>
+
+                    <com.ypwl.xiaotouzi.view.RadioTab
+                        android:id="@+id/activity_keep_accounts_rt_bid_reward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/keep_accounts_line"/>
+
+                <LinearLayout
+                    android:id="@+id/activity_keep_accounts_ll_extra_bonus"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/keep_accounts_extra_bonus"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textSize="15sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/activity_keep_accounts_et_extra_bonus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="17dp"
+                            android:background="@null"
+                            android:hint="@string/keep_accounts_hint_optional_content"
+                            android:maxLength="9"
+                            android:textColor="@color/keep_accounts_text_value"
+                            android:textColorHint="@color/keep_accounts_text_hint"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:id="@+id/activity_keep_accounts_tv_extra_bonus_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/keep_accounts_btn_yuan"
+                            android:textColor="@color/keep_accounts_text_value"
+                            android:textSize="15sp"
+                            android:visibility="invisible"/>
+                    </LinearLayout>
+
+                    <com.ypwl.xiaotouzi.view.RadioTab
+                        android:id="@+id/activity_keep_accounts_rt_extra_bonus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/keep_accounts_spacing"/>
+
+                <LinearLayout
+                    android:id="@+id/activity_keep_accounts_ll_interest_costs"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/keep_accounts_btn_interest_costs"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/activity_keep_accounts_et_interest_costs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:background="@null"
+                        android:hint="@string/keep_accounts_hint_optional_content"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textColorHint="@color/keep_accounts_text_hint"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/activity_keep_accounts_tv_interest_costs_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/keep_accounts_btn_per_cent"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textSize="15sp"
+                        android:visibility="invisible"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/keep_accounts_line"/>
+
+                <LinearLayout
+                    android:id="@+id/activity_keep_accounts_ll_enchashment_costs"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/keep_accounts_btn_enchashment_costs"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/activity_keep_accounts_et_enchashment_costs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:background="@null"
+                        android:hint="@string/keep_accounts_hint_optional_content"
+                        android:maxLength="9"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textColorHint="@color/keep_accounts_text_hint"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/activity_keep_accounts_tv_enchashment_costs_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/keep_accounts_btn_yuan"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textSize="15sp"
+                        android:visibility="invisible"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/keep_accounts_spacing"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/keep_accounts_due_automatic_repayment"
+                        android:textColor="@color/keep_accounts_text_value"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/activity_keep_accounts_iv_due_automatic_repayment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/btn_046"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@color/keep_accounts_spacing"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:text="@string/keep_accounts_due_automatic_repayment_note"
+                    android:textColor="@color/keep_accounts_text_key"
+                    android:textSize="12sp"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <EditText
+                        android:id="@+id/activity_keep_accounts_et_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="top|left"
+                        android:hint="@string/keep_accounts_hint_note"
+                        android:minHeight="120dp"
+                        android:padding="13dp"
+                        android:textColorHint="@color/keep_accounts_text_hint"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/activity_keep_accounts_tv_note_counts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/activity_keep_accounts_et_note"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="13dp"
+                        android:text="0/50"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_weight="0">
+
+        <Button
+            android:id="@+id/activity_keep_accounts_bt_keep_again"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/keep_accounts_btn_keep_again"
+            android:text="保存再记"
+            android:textColor="@color/h"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/activity_keep_accounts_bt_keep"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/keep_accounts_btn_keep"
+            android:text="保存"
+            android:textColor="@color/h"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</LinearLayout>

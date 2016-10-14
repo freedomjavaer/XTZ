@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/item_news_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_color_bg_gray_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.ypwl.xiaotouzi.view.CircleImageView
+            android:id="@+id/iv_news_reply_icon"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@mipmap/pic_021"
+            app:border_color="@color/h"
+            app:border_width="0dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/iv_news_reply_icon"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_news_reply_date"
+                    android:layout_alignParentRight="true"
+                    android:textSize="14sp"
+                    android:text="2016年5月9日"
+                    android:textColor="@color/d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_news_reply_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/tv_news_reply_date"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="true"
+                    android:text="晓投资"
+                    android:textColor="@color/style_current_title"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_news_reply_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:text="内容"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/d"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/netcredit_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/e"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+</LinearLayout>

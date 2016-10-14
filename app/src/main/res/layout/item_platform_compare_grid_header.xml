@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="20dp"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#507c7c7c"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_info_compare"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:background="#cccccc"
+            android:gravity="center"
+            android:text="信息对比"
+            android:textColor="#000000"
+            android:textSize="12sp"/>
+
+        <!--<com.ypwl.xiaotouzi.view.FlowLayout-->
+        <!--android:id="@+id/info_flowlayout_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+        <LinearLayout
+            android:id="@+id/ll_title_content1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/f"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_title_content1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="信息对比"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/e"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_title_content2"
+            android:layout_width="0dp"
+            android:background="@color/f"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_title_content2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="信息对比"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/e"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_title_content3"
+            android:layout_width="0dp"
+            android:background="@color/f"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_title_content3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="信息对比"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/e"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_title_content4"
+            android:layout_width="0dp"
+            android:background="@color/f"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_title_content4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="信息对比"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/e"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_title_content5"
+            android:layout_width="0dp"
+            android:background="@color/f"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_title_content5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="信息对比"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/e"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#507c7c7c"/>
+
+</LinearLayout>

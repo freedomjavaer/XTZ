@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <!--虚线-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/line_void"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/abd_item_return_time"
+            style="@style/bid_detail_textview_three"
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:text="@string/activity_txt_repayment_date"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/abd_item_capital"
+                style="@style/bid_detail_textview_three"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/activity_txt_principal_one"/>
+
+            <TextView
+                android:id="@+id/abd_item_profit"
+                style="@style/bid_detail_textview_three"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/activity_txt_earnings_one"/>
+
+            <TextView
+                android:id="@+id/abd_item_total"
+                style="@style/bid_detail_textview_three"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/activity_txt_total_one"/>
+
+            <TextView
+                android:id="@+id/abd_item_status"
+                style="@style/bid_detail_textview_three"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/activity_txt_status"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

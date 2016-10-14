@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_title"/>
+
+    <EditText
+        android:id="@+id/et_get_money_bank_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/user_contact_way_bg"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        android:singleLine="true"
+        android:textColorHint="@color/gray"
+        android:hint="@string/get_money_bank_name"/>
+
+    <EditText
+        android:id="@+id/et_get_money_bank_card_number"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/user_contact_way_bg"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:maxLength="19"
+        android:singleLine="true"
+        android:textColorHint="@color/gray"
+        android:hint="@string/get_money_bank_card_number"/>
+
+    <EditText
+        android:id="@+id/et_get_money_bank_real_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/user_contact_way_bg"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"
+        android:textColorHint="@color/gray"
+        android:hint="@string/get_money_bank_real_name"/>
+
+    <EditText
+        android:id="@+id/et_get_money_back_money"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/user_contact_way_bg"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="60dp"
+        android:singleLine="true"
+        android:maxLength="8"
+        android:textColorHint="@color/gray"
+        android:hint="@string/get_money_bank_limit"/>
+
+    <TextView
+        android:id="@+id/tv_get_back_money_available_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="60dp"
+        android:textSize="20sp"
+        android:text="可提现金额:00.00"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:background="@color/hh"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="提交"/>
+
+
+</LinearLayout>

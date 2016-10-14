@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingBottom="4dp"
+              android:paddingTop="4dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_platform_choose_history_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:paddingBottom="4dp"
+        android:text="历史记录"
+        android:textColor="@color/d"
+        android:textSize="16sp"/>
+
+    <ListView
+        android:id="@+id/history_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="40dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none"/>
+
+    <TextView
+        android:id="@+id/tv_history_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="right"
+        android:paddingRight="22dp"
+        android:text="清空记录"
+        android:textColor="@color/c"
+        android:textSize="13sp"/>
+</LinearLayout>
+
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_chart_markerview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:background="@drawable/markerview_1" >
+
+  <TextView
+      android:id="@+id/tvContent"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      android:gravity="center"
+      android:maxLines="4"
+      android:text=""
+      android:textSize="12dp"
+      android:textColor="@color/unchoosedcolor"
+      android:ellipsize="end"
+      android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

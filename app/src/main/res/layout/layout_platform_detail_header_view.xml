@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:orientation="horizontal">
+    <!--图片-->
+    <FrameLayout
+        android:id="@+id/fl_detail_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="84dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/activity_account_company_image"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/cal_share_my_mobel_image_bg"
+            android:padding="1dp"
+            android:src="@mipmap/pic_021"/>
+
+        <ImageView
+            android:id="@+id/iv_platform_detail_logo_level"
+            android:layout_width="44dp"
+            android:layout_height="14dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/a_up_level"
+            android:visibility="visible"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_detail_video_icon"
+            android:layout_width="82dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:background="#7c7c7c"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_video_play"
+                android:layout_width="15dp"
+                android:layout_height="22dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/camera"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/iv_video_play"
+                android:text="视频"
+                android:textColor="@color/h"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/iv_video_play"
+                android:text="监控"
+                android:textColor="@color/h"
+                android:textSize="10sp"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <!--公司介绍 及收藏五角星-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <!-- 平台背景 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="平台背景"
+                    android:textColor="@color/d"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/activity_detail_platform_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70dp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+            </RelativeLayout>
+
+
+            <!--数据2-2 ： 注册资金-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/activity_txt_registered_capital"
+                    android:textColor="@color/d"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/activity_account_registered_fund_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+            </RelativeLayout>
+
+            <!--数据2-4 ： 上线时间-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/activity_txt_on_line_time"
+                    android:textColor="@color/d"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/activity_account_online_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+            </RelativeLayout>
+
+            <!--数据2-1 ： 平台网址-->
+            <RelativeLayout
+                android:id="@+id/activity_account_company_website_address_rl"
+                android:layout_width="match_parent"
+                android:layout_height="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/activity_txt_site"
+                    android:textColor="@color/d"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/activity_account_company_website_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/b"
+                    android:textSize="12sp"/>
+
+            </RelativeLayout>
+
+            <!--数据2-5 ： 公司所在地-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/activity_txt_company_location"
+                    android:textColor="@color/d"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/activity_account_company_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="70dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/c"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/detail_collect"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/focus_empty_star"/>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/listview_refresh_footer_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_color_bg_gray_white"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/listview_refresh_footer_content_progresslayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ProgressBar
+                android:id="@+id/listview_refresh_footer_content_progresslayout_progressbar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:indeterminateDrawable="@drawable/loading_progress_wait"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/listview_refresh_footer_content_progresslayout_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/listview_refresh_footer_content_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="上拉加载更多"/>
+    </RelativeLayout>
+
+</LinearLayout>

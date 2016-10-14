@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+  <ImageView
+      android:id="@+id/tv_platform_deep_data_img"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:src="@mipmap/deepdata_select"
+      android:visibility="gone"/>
+
+  <TextView
+      android:id="@+id/tv_platform_deep_data_item"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="5dip"
+      android:text="成交量"
+      android:gravity="center"
+      android:textColor="@color/selector_btn_detail_data_textcolor"
+      android:textSize="11sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/layout_fragment_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </RelativeLayout>
+
+        <!--V4.1之后不再使用下面的活动显示功能-->
+        <RelativeLayout
+            android:id="@+id/layout_main_huodong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:visibility="gone">
+
+            <include layout="@layout/layout_main_huodong"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_window_deep"/>
+
+    <RadioGroup
+        android:id="@+id/rg_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tab_xtz"
+            style="@style/main_tab"
+            android:drawableTop="@drawable/main_radiobutton_xtz_selector"
+            android:text="@string/main_tab_text_xtz"/>
+
+        <RadioButton
+            android:id="@+id/tab_finance_market"
+            style="@style/main_tab"
+            android:drawableTop="@drawable/main_radiobutton_finance_selector"
+            android:text="@string/main_tab_text_finance_market"/>
+
+        <RadioButton
+            android:id="@+id/tab_myinvest"
+            style="@style/main_tab"
+            android:drawableTop="@drawable/main_radiobutton_invest_selector"
+            android:text="@string/main_tab_text_myaccount"/>
+
+        <RadioButton
+            android:id="@+id/tab_more"
+            style="@style/main_tab"
+            android:drawableTop="@drawable/main_radiobutton_me_selector"
+            android:text="@string/main_tab_text_myinfo"/>
+
+    </RadioGroup>
+
+</LinearLayout>

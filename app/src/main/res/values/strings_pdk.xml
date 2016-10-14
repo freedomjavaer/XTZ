@@ -1,0 +1,107 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="platform_detail_bid">标的详情</string>
+    <string name="platform_detail_bid_average_revenue">平均收益：%s</string>
+    <string name="platform_detail_bid_auto_bid">自动投标：%s</string>
+    <string name="platform_detail_bid_debenture_transfer">债权转让：%s</string>
+    <string name="platform_detail_bid_funds_trusteeship">资金托管：%s</string>
+    <string name="platform_detail_bid_guarantee">投标保障：%s</string>
+    <string name="platform_detail_bid_security_mode">保障模式：%s</string>
+    <string name="platform_detail_bid_guarantor">担保机构：%s</string>
+    <string name="platform_detail_bid_three_month_money">近三月标的期限</string>
+    <string name="platform_detail_data">平台数据</string>
+    <string name="platform_detail_deep_data">深度数据</string>
+    <string name="platform_detail_company_info">公司信息</string>
+    <string name="platform_detail_company_info_name">%s</string>
+    <string name="platform_detail_company_info_legal_person">%s</string>
+    <string name="platform_detail_company_info_financing_state">%s</string>
+    <string name="platform_detail_company_info_icp">%s</string>
+    <string name="platform_detail_company_info_phone">%s</string>
+    <string name="platform_detail_company_info_fax">%s</string>
+    <string name="platform_detail_company_info_400">%s</string>
+    <string name="platform_detail_company_info_email">%s</string>
+    <string name="platform_detail_company_info_bussiness_type">%s</string>
+    <string name="platform_detail_company_info_address">%s</string>
+    <string name="platform_detail_company_info_images">%s</string>
+    <string name="platform_detail_btn_compare_add">加入对比</string>
+    <string name="platform_detail_btn_compare_start">开始对比</string>
+    <string name="platform_detail_company_invest_number">投资人数/人</string>
+    <string name="platform_detail_company_borrow_number">借款人数/人</string>
+    <string name="platform_detail_company_turnover">成交量/万元</string>
+    <string name="platform_detail_company_profit">利率/%</string>
+    <string name="platform_detail_deep_data_day">日</string>
+    <string name="platform_detail_deep_data_week">周</string>
+    <string name="platform_detail_deep_data_month">月</string>
+
+    <string name="bid_detail_invest_money">投资本金：%s</string>
+    <string name="bid_detail_recieve_profit">应收收益：%s</string>
+    <string name="bid_detail_back_total_money">已回总额：%s</string>
+    <string name="bid_detail_await_total_money">待回总额：%s</string>
+    <string name="bid_detail_interest_time">起息时间：%s</string>
+     <string name="bid_detail_time_limit">投资期限：</string>
+    <string name="bid_detail_rate">利&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;率：%s</string>
+    <string name="bid_detail_repayment_way">还款方式：%s</string>
+    <string name="bid_detail_remark">备注：%s</string>
+    <string name="bid_detail_last_update_time">上次更新：%s</string>
+    <string name="bid_detail_issue">期号</string>
+    <string name="bid_detail_time">时间</string>
+    <string name="bid_detail_back_sum">回款金额</string>
+    <string name="bid_detail_residue_back_sum">剩余回款</string>
+    <string name="bid_detail_state">状态</string>
+    <string name="invest_analyze_property_overview">资产概览</string>
+    <string name="invest_analyze_compare_analyze">对比分析</string>
+    <string name="invest_analyze_scale_statistics">占比统计</string>
+    <string name="invest_analyze_invest_overview">投资概览</string>
+    <string name="invest_analyze_invest_cash_flow">收益趋势</string>
+    <string name="compare_analyze_annual_rate">年化率</string>
+    <string name="compare_analyze_invest_money">投资金额</string>
+    <string name="compare_analyze_expect_profit">预期收益</string>
+    <string name="scale_statistics_platform">平台</string>
+    <string name="scale_statistics_money">金额</string>
+    <string name="scale_statistics_annual_rate">年化率</string>
+    <string name="scale_statistics_cycle">周期</string>
+
+    <!-- 我的-->
+    <string name="my_info_backmoney_remind">回款提醒</string>
+    <string name="my_info_backmoney_warn">有标的回款时为了能及时通知您，请打开该选项</string>
+    <string name="my_info_getsture_password">手势密码</string>
+    <string name="my_info_change_getsture_password">修改手势密码</string>
+    <string name="my_info_set_getsture_password">设置手势密码</string>
+    <string name="gp_set_gesture_pattern">绘制解锁图案</string>
+    <string name="gp_set_gesture_pattern_again">再次输入手势密码以确认</string>
+    <string name="reset_getsture_password">重置密码</string>
+    <string name="gp_forget_gesture_code">忘记手势密码?</string>
+    <string name="verify_gesture_psw">请输入手势密码</string>
+    <string name="my_info_small_wallet">晓钱包</string>
+
+
+    <!-- 常见问题与反馈-->
+    <string name="question_feedback">常见问题与反馈</string>
+    <string name="question_feedback_commit_suggestion">提交您的意见</string>
+    <string name="suggestion_feedback">反馈意见</string>
+    <string name="user_suggestion_hint">写下您想反馈的信息</string>
+    <string name="user_contact_way">留下联系方式我们与您联系</string>
+    <string name="useruser_contact_info">请输入手机号/QQ/邮箱</string>
+    <string name="feedback_success">反馈成功</string>
+    <string name="thanks_one">感谢您对晓投资的关注与支持，</string>
+    <string name="thanks_two"> 我们会认真处理您的反馈。</string>
+
+    <!-- 收件箱-->
+    <string name="message_box_title">收件箱</string>
+    <string name="message_detail">信息详情</string>
+
+    <!-- 投资分析===收益排行-->
+    <string name="radio_btn_profit">收&#12288;益</string>
+    <string name="radio_btn_rate">年化率</string>
+
+    <!--提现-->
+    <string name="get_money_bank_name">输入银行卡开户行</string>
+    <string name="get_money_bank_card_number">输入银行卡号码</string>
+    <string name="get_money_bank_real_name">真实姓名</string>
+    <string name="get_money_bank_limit">提现金额：100起</string>
+
+    <!--金融平台-->
+    <string name="book_project">确定预约后，会有专业的理\n财师与您联系，购买事宜</string>
+    <string name="insurance_book_project">确定预约后，会有专业的保\n险人员与您联系购买事宜</string>
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_title"/>
+
+    <include
+        layout="@layout/layout_no_data_view"
+        android:visibility="gone"/>
+
+    <com.andview.refreshview.XRefreshView
+        android:id="@+id/xtz_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ypwl.xiaotouzi.view.LoadMoreListView
+            android:id="@+id/xtz_main_page_loadmorelistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/f"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:scrollbars="none"/>
+
+
+    </com.andview.refreshview.XRefreshView>
+</LinearLayout>

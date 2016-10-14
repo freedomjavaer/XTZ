@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_item_invest_history_p_letter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#99CCCCCC"
+        android:paddingBottom="3dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="3dp"
+        android:text="A"
+        android:textColor="@color/d"
+        android:textSize="14sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_invest_history_p_name"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:text="诚汇通"
+            android:textColor="@color/a"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_invest_history_lilv"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/iv_invest_history_arrow"
+            android:singleLine="true"
+            android:text="年化率99.22%"
+            android:textColor="@color/c"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/iv_invest_history_arrow"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/btn_018"/>
+
+        <TextView
+            android:id="@+id/tv_invest_history_shouyi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/tv_invest_history_lilv"
+            android:layout_toRightOf="@+id/tv_invest_history_p_name"
+            android:singleLine="true"
+            android:text="收益200.22元"
+            android:textColor="@color/c"
+            android:textSize="15sp"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/e"/>
+
+
+</LinearLayout>

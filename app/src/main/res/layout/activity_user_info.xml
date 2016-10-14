@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@mipmap/user_info_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <RelativeLayout
+                android:id="@+id/layout_personal_info_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true">
+
+                <com.ypwl.xiaotouzi.view.CircleImageView
+                    android:id="@+id/iv_personal_info_icon"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/pic_027"
+                    app:border_color="@color/h"
+                    app:border_width="0dp"/>
+
+                <!--<ImageView-->
+                    <!--android:layout_width="80dp"-->
+                    <!--android:layout_height="80dp"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:contentDescription="@null"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:src="@mipmap/click_change_icon"/>-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_personal_info_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:hint="请输入昵称"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_personal_info_bind_phone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="?android:selectableItemBackground"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                style="@style/personal_data_layout_item_title"
+                android:text="@string/info_layout_item_bind_phone_title"/>
+
+            <TextView
+                android:id="@+id/info_layout_item_bind_phone_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/d"
+                android:visibility="gone"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/info_layout_item_bind_phone_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@mipmap/right_arrow"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/person_info_bg"/>
+
+        <!-- 绑定其他账号-->
+        <LinearLayout
+            android:id="@+id/layout_item_bind_other_account"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="?android:selectableItemBackground"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                style="@style/personal_data_layout_item_title"
+                android:text="绑定社交账号"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@mipmap/right_arrow"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/person_info_bg">
+
+        <View
+            android:id="@+id/v"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/tv_login_or_logout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_above="@id/v"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_user_info"
+            android:textSize="16sp"
+            android:text="退出登录"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

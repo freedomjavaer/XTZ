@@ -1,0 +1,136 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        debug {
+            keyAlias 'android'
+            keyPassword 'android'
+            storeFile file('E:/debug.jks')
+            storePassword 'android'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/maven/com.squareup.okio/okio/pom.xml'
+        exclude 'META-INF/maven/com.squareup.okio/okio/pom.properties'
+        exclude 'project.properties'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
+    lintOptions {
+        abortOnError false
+        disable 'MissingTranslation'
+    }
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "com.ypwl.xiaotouzi"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 19
+        versionName "4.5"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true //混淆
+            //移除无用的resource文件
+            shrinkResources true
+            //混淆配置文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets.main {
+        jniLibs.srcDir 'libs'
+    }
+    productFlavors {
+//        fp {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "fp"]
+//        }
+        _360 {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "360"]
+        }
+        baidu {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "baidu"]
+        }
+        yingyongbao {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "yingyongbao"]
+        }
+        wandoujia {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wandoujia"]
+        }
+        anzhi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "anzhi"]
+        }
+        xiaomi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi"]
+        }
+        huawei {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "huawei"]
+        }
+        meizu {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "meizu"]
+        }
+        lianxiang {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "lianxiang"]
+        }
+        sogou {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "sogou"]
+        }
+        oppo {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "oppo"]
+        }
+        jinli {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "jinli"]
+        }
+        leshi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "leshi"]
+        }
+        ppzhushou {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "ppzhushou"]
+        }
+        other {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "other"]
+        }
+        anzhuoshichang {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "anzhuoshichang"]
+        }
+        _91zhushou {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "91zhushou"]
+        }
+        google {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "google"]
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:support-v4:22.2.1'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:recyclerview-v7:22.2.1'
+    compile 'com.android.support:design:22.2.1'
+    compile 'com.alibaba:fastjson:1.2.7'
+    compile 'com.baoyz.swipemenulistview:library:1.3.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.ogaclejapan.smarttablayout:library:1.4.1@aar'
+    compile 'com.darwinsys:hirondelle-date4j:1.5.1'
+    compile 'com.squareup:otto:1.3.8'
+    compile 'com.commit451:PhotoView:1.2.4'
+    compile project(':ijkplayer-java')
+    compile('io.socket:engine.io-client:0.6.3') {
+        exclude group: 'org.json', module: 'json'
+    }
+    compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    compile project(':xrefreshview')
+}
+
+
+
+
+

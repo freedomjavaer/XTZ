@@ -1,0 +1,22 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="margin20">20dp</dimen>
+    <dimen name="bottom_btn_textsize">13sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--customcalendar-->
+    <dimen name="red_text_size_day">6sp</dimen>
+    <dimen name="text_size_day">14sp</dimen>
+    <dimen name="text_size_month">12sp</dimen>
+    <dimen name="text_size_day_name">14sp</dimen>
+    <dimen name="header_month_height">4dip</dimen>
+    <dimen name="selected_day_radius">12dip</dimen>
+    <dimen name="selected_day_red_point_radius">4dp</dimen>
+    <dimen name="event_dots_radius">2.5dp</dimen>
+    <dimen name="calendar_height">220dip</dimen>
+    <dimen name="month_info_text_size">24sp</dimen>
+
+</resources>

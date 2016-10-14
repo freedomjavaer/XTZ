@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CDGifTheme">
+        <attr name="gifViewStyle" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="CDGifView">
+        <attr name="gif" format="reference"/>
+        <attr name="paused" format="boolean"/>
+    </declare-styleable>
+</resources>

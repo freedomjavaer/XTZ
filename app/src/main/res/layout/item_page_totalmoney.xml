@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/piechart_totalmoney"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:visibility="gone"
+            android:id="@+id/piechart_platform_detail_total_money"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/pie_chart_no_data_totalmoney"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/piechart_no_data"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="3dp"
+            android:background="#5ad4ff"
+            android:gravity="center"
+            android:text="0-10万"
+            android:textColor="#ffffff"
+            android:textSize="9sp"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="3dp"
+            android:background="#8cacff"
+            android:gravity="center"
+            android:text="10-100万"
+            android:textColor="#ffffff"
+            android:textSize="9sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="3dp"
+            android:background="#62e6b9"
+            android:gravity="center"
+            android:text="100-1000万"
+            android:textColor="#ffffff"
+            android:textSize="9sp"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="3dp"
+            android:background="#ff8f8f"
+            android:gravity="center"
+            android:text="1000万以上"
+            android:textColor="#ffffff"
+            android:textSize="9sp"/>
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<View-->
+            <!--android:layout_width="5dp"-->
+            <!--android:layout_height="5dp"-->
+            <!--android:background="@drawable/gray_point"/>-->
+
+        <!--<View-->
+            <!--android:layout_width="5dp"-->
+            <!--android:layout_height="5dp"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:background="@drawable/blue_point_piechart"/>-->
+
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

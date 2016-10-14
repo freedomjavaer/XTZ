@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- 填充的颜色 -->
+    <solid android:color="#e9e9e9"/>
+
+    <!-- 边框颜色 -->
+    <stroke android:color="#3DB5E6" android:width="1dp"/>
+
+    <!-- 设置按钮的四个角为弧形 -->
+    <corners android:radius="5dp"/>
+
+    <padding
+        android:bottom="5dp"
+        android:left="8dp"
+        android:right="8dp"
+        android:top="5dp"
+        />
+</shape>

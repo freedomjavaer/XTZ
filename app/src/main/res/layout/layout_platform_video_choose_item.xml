@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/tv_platform_video_choose_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:gravity="center"
+    android:textColor="@color/selector_platform_video_choose_text_color"
+    android:background="@drawable/video_choice_btn_selector"
+    android:text="大门"
+    android:textSize="13sp"/>
+

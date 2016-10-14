@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="cd_dialog_layout_bg">@color/white</color>
+    <color name="cd_title_layout_bg">@color/a</color>
+    <color name="cd_title_text">@color/white</color>
+    <color name="cd_content_message_text">@color/title_text</color>
+    <color name="cd_btn_text">@color/white</color>
+    <color name="cd_btn_text_tips">@color/a</color>
+    <color name="cd_primary_normal">@color/a</color>
+    <color name="cd_primary_pressed">@color/aa</color>
+
+    <color name="cd_hud_default">#b1000000</color>
+    <color name="cd_hud_default_gray">#449E9E9E</color>
+</resources>

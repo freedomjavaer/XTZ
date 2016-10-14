@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:background="@color/finance_supermarket_item_space"
+             android:layout_height="match_parent">
+
+    <com.andview.refreshview.XRefreshView
+        android:id="@+id/fragment_finance_supermarket_of_platform_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_height="match_parent">
+
+        <com.ypwl.xiaotouzi.view.LoadMoreListView
+            android:id="@+id/fragment_finance_supermarket_of_platform_lv_loadmorelistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="10dp"
+            android:fadingEdge="none"
+            android:scrollbars="none"/>
+
+    </com.andview.refreshview.XRefreshView>
+
+    <include layout="@layout/layout_no_data_view"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_finance_supermarket_of_platform_iv_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:clickable="true"
+        android:background="#EFEFF4">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/pic_finance_market_platform_no_data"
+            />
+    </FrameLayout>
+
+</FrameLayout>

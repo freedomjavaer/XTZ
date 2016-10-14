@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/base_popuview_ll_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/base_popuview_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_popuview_bg_item_top"
+        android:gravity="center"
+        android:textColor="@color/popup_text_title"
+        android:text="呵呵"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/base_popuview_title_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:visibility="gone"
+        android:background="@color/popup_line" />
+
+    <LinearLayout
+        android:id="@+id/base_popuview_ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:id="@+id/base_popuview_tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/base_popuview_bg_item_single"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/popup_text_item"
+        android:textSize="16sp"/>
+
+</LinearLayout>

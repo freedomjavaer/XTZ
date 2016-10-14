@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray">#FFCBCBCB</color>
+    <color name="blue">#FF338EE5</color>
+
+    <color name="pink">#FF9999</color>
+    <color name="purple">#cc88ff</color>
+    <color name="deepgray">#999999</color>
+    <color name="orange">#996633</color>
+    <color name="gg">#00FF00</color>
+    <color name="sky">#00FFFF</color>
+    <color name="bg_item">#FFF8F8F8</color>
+    <color name="profit_tendency_barchart_color">#7f00BE00</color>
+    <color name="myinfo_bg_color">#eaeaea</color>
+    <color name="textcolor">#8E8E93</color>
+
+    <!--投资分析-->
+    <color name="linegray">#cccccc</color>
+    <color name="choosedcolor">#333333</color>
+    <color name="unchoosedcolor">#7c7c7c</color>
+    <color name="lightgray">#f8f8f8</color>
+
+    <!-- 手势密码-->
+    <color name="gp_line_wrong">#ff0000</color>
+    <color name="gp_line_normal">#00FFFF</color>
+    <color name="gesture_bg_color">#03AAD9</color>
+
+    <color name="investassets_color">#f0f0f0</color>
+
+</resources>

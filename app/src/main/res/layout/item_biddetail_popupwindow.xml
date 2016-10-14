@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingTop="4dp"
+              android:background="@drawable/bg_sync_data"
+              android:orientation="vertical">
+
+  <LinearLayout
+
+      android:id="@+id/ll_popupwindow_editor"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="3"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:src="@mipmap/editor_icon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="2dp"
+        android:textSize="15sp"
+        android:textColor="@color/d"
+        android:text="编辑"/>
+
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/gray"/>
+
+  <LinearLayout
+      android:id="@+id/ll_popupwindow_delete"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="2"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:src="@mipmap/delete_icon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="2dp"
+        android:textSize="15sp"
+        android:textColor="@color/d"
+        android:text="删除"/>
+
+  </LinearLayout>
+
+</LinearLayout>

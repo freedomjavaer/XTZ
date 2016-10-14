@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+        <ImageView
+            android:id="@+id/pic_code"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"/>
+
+        <EditText
+            android:id="@+id/auth_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/pic_code"
+            android:background="@drawable/auto_tally_auth_code_bg_shape"
+            android:hint="请输入验证码"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textColorHint="#993DB5E6"
+            android:textSize="13sp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/a"
+        android:text="确  定"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+</LinearLayout>

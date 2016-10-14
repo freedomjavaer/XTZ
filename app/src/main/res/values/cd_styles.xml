@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CD_Dialog_Theme" parent="@android:style/Theme.Holo.Light.Dialog.NoActionBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="CD_Dialog_Anim" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/cd_enter</item>
+        <item name="android:windowExitAnimation">@anim/cd_exit</item>
+    </style>
+
+    <style name="CD_Dialog_Anim_Tips" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/cd_enter_tips</item>
+        <item name="android:windowExitAnimation">@anim/cd_exit_tips</item>
+    </style>
+
+    <style name="CD_Dialog_Anim_Left" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/cd_enter_left_tips</item>
+        <item name="android:windowExitAnimation">@anim/cd_exit_left_tips</item>
+    </style>
+
+
+    <style name="CD_DialogGifView" parent="@android:style/Widget"/>
+
+</resources>

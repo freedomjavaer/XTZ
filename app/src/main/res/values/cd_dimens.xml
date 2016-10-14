@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="cd_round_cornor_radius_bg">5dp</dimen>
+    <dimen name="cd_round_cornor_radius_btn">5dp</dimen>
+</resources>

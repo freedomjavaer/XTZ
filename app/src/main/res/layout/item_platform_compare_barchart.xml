@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"
+             android:layout_marginRight="3dp"
+             android:background="@color/f"
+             android:descendantFocusability="blocksDescendants"
+             android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/h"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:id="@+id/rl_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_barchart_value1"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="12dp"
+                android:gravity="center_vertical"
+                android:text="10964.83"
+                android:textColor="#000000"
+                android:textSize="9dp"
+                android:visibility="gone"/>
+
+            <ProgressBar
+                android:id="@+id/item_barchart1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:progress="0"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp"
+                android:progressDrawable="@drawable/barcolor_paltform_compare_data_one"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_barchart_value2"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="12dp"
+                android:gravity="center_vertical"
+                android:text="10964.83"
+                android:textColor="#000000"
+                android:textSize="9dp"
+                android:visibility="gone"/>
+
+            <ProgressBar
+                android:id="@+id/item_barchart2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:progress="0"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp"
+                android:progressDrawable="@drawable/barcolor_paltform_compare_data_two"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_barchart_value3"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="12dp"
+                android:gravity="center_vertical"
+                android:text="10964.83"
+                android:textColor="#000000"
+                android:textSize="9dp"
+                android:visibility="gone"/>
+
+            <ProgressBar
+                android:id="@+id/item_barchart3"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:progress="0"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp"
+                android:progressDrawable="@drawable/barcolor_paltform_compare_data_three"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_barchart_value4"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="12dp"
+                android:gravity="center_vertical"
+                android:text="10964.83"
+                android:textColor="#000000"
+                android:textSize="9dp"
+                android:visibility="gone"/>
+
+            <ProgressBar
+                android:id="@+id/item_barchart4"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:progress="0"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp"
+                android:progressDrawable="@drawable/barcolor_paltform_compare_data_four"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_barchart_value5"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="12dp"
+                android:gravity="center_vertical"
+                android:text="10964.83"
+                android:textColor="#000000"
+                android:textSize="9dp"
+                android:visibility="gone"/>
+
+            <ProgressBar
+                android:id="@+id/item_barchart5"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:progress="0"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp"
+                android:progressDrawable="@drawable/barcolor_paltform_compare_data_five"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_barchart_value_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="4dp"
+        android:drawableLeft="@mipmap/platform_compare_gray_point"
+        android:paddingLeft="27dp"
+        android:text="成交量/万"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+</FrameLayout>

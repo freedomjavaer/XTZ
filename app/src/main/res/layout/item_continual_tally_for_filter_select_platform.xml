@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_continual_tally_for_filter_select_platform_tv_letter"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:background="@android:color/transparent"
+        android:textSize="12sp"
+        android:textColor="@color/continual_tally_filter_text_last_back_gray"
+        android:layout_height="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1px"
+        android:background="@android:color/white"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/item_continual_tally_for_filter_select_platform_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/continual_tally_text_black"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/item_continual_tally_for_filter_select_platform_iv_selected"
+            android:layout_width="13dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selected"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,649 @@
+<LinearLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title"/>
+
+    <include layout="@layout/layout_no_data_view"/>
+
+    <LinearLayout
+        android:id="@+id/layout_data_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_window"
+        android:orientation="vertical"
+        >
+
+        <!--项目名称与状态 -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/ll_single_bid_p_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/bid_detail_aid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14dp"
+                        android:padding="2dp"
+                        android:singleLine="true"
+                        android:text="诚汇通"
+                        android:textColor="@color/a"
+                        android:textSize="16sp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_single_bid_detail_auto_tally_icon"
+                        android:layout_width="42dp"
+                        android:layout_height="14dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/bid_detail_aid"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/auto_tally_tag"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_bid_back_detail_sync_ing"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        android:visibility="invisible">
+
+                        <ProgressBar
+                            android:id="@+id/layout_no_data_view_layout_hint_pb_loading"
+                            style="?android:attr/progressBarStyleInverse"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="3dp"
+                            android:text="同步中..."
+                            android:textColor="@color/d"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_single_bid_detail_tb_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/d"
+                        android:textSize="12sp"
+                        android:visibility="invisible"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/bid_detail_bid_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:text="已跑路"
+                    android:textColor="@color/d"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/bid_detail_project_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toLeftOf="@id/bid_detail_bid_status"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="酒水资金周转第3标酒水资金周转第3标酒水资金周转第3标酒水资金周转第3标酒水资金周转第3标酒水资金周转第3标酒水资金周转第3标"
+                    android:textColor="@color/c"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--项目时间与投资状况 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="14dp"
+                    android:paddingTop="14dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="18dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="1dp"
+                        android:paddingTop="3.5dp">
+
+                        <ImageView
+                            android:id="@+id/vi1"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/bid_de_blue"
+                            />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/llc_13"/>
+
+
+                        <ImageView
+                            android:id="@+id/vi2"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/bid_de_yellow"
+                            />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:orientation="horizontal"
+                            >
+
+                            <TextView
+                                android:id="@+id/bid_detail_starttime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="2015年2月6日"
+                                android:textColor="@color/c"
+                                android:textSize="16sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:text="开始计息"
+                                android:textColor="@color/c"
+                                android:textSize="16sp"
+                                />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/bid_detail_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="5dp"
+                            android:text="投标40,000.56元"
+                            android:textColor="@color/c"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:id="@+id/bid_detail_award_capital"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="5dp"
+                            android:text="奖励本金20.78元           合计26,746.89元"
+                            android:textColor="@color/d"
+                            android:textSize="12sp"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="15dp"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:orientation="vertical"
+                                >
+
+                                <TextView
+                                    android:id="@+id/bid_detail_rate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="标的年化率14%"
+                                    android:textColor="@color/c"
+                                    android:textSize="12sp"/>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical"
+                                >
+
+                                <TextView
+                                    android:id="@+id/bid_detail_time_limit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="周期3个月"
+                                    android:textColor="@color/c"
+                                    android:textSize="12sp"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/bid_detail_return_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:paddingBottom="15dp"
+                            android:text="按月付息、到期还清"
+                            android:textColor="@color/c"
+                            android:textSize="12sp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:orientation="horizontal"
+                            >
+
+                            <TextView
+                                android:id="@+id/bid_detail_return_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="2015年2月6日"
+                                android:textColor="@color/c"
+                                android:textSize="16sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:text="回款结束"
+                                android:textColor="@color/c"
+                                android:textSize="16sp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="3dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/bid_detail_profit"
+                            android:layout_width="156dp"
+                            android:layout_height="wrap_content"
+                            android:text="预期收益5000.24元"
+                            android:textColor="@color/c"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:id="@+id/bid_detail_wannual"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="综合年化率16%"
+                            android:textColor="@color/c"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_bid_detail_reward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:text="含"
+                            android:textColor="@color/d"
+                            android:textSize="12sp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <LinearLayout
+                                android:id="@+id/ll_bid_detail_award"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/bid_detail_tender_award"
+                                    android:layout_width="156dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="投标奖励276.34元"
+                                    android:textColor="@color/d"
+                                    android:textSize="12sp"/>
+
+                                <TextView
+                                    android:id="@+id/bid_detail_extra_award"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="额外奖励276.34元"
+                                    android:textColor="@color/d"
+                                    android:textSize="12sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_bid_detail_cost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/bid_detail_cost"
+                                    android:layout_width="156dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="利息管理费276.34元"
+                                    android:textColor="@color/d"
+                                    android:textSize="12sp"/>
+
+                                <TextView
+                                    android:id="@+id/bid_detail_cash_cost"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="取现手续费276.34元"
+                                    android:textColor="@color/d"
+                                    android:textSize="12sp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/bid_detail_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="8dp"
+                    android:singleLine="false"
+                    android:textColor="@color/d"
+                    android:textSize="14sp"
+                    android:visibility="gone"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="14dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="27dp"
+                    android:paddingTop="14dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/bid_detail_ratio"
+                            android:layout_width="86dp"
+                            android:layout_height="wrap_content"
+                            android:text="已还50.00%"
+                            android:textColor="@color/c"
+                            android:textSize="14sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/bid_detail_period"
+                            android:layout_width="64dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:layout_toRightOf="@id/bid_detail_ratio"
+                            android:text="4/6期"
+                            android:textColor="@color/c"
+                            android:textSize="14sp"/>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/bid_detail_period"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:id="@+id/bid_detail_my_money"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:paddingRight="20dp"
+                                android:text="本金107元"
+                                android:textColor="@color/c"
+                                android:textSize="14sp"/>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_bid_detail_principal"
+                                android:layout_width="match_parent"
+                                android:layout_height="10dp">
+
+                            </RelativeLayout>
+
+
+                            <!--<View-->
+                            <!--android:layout_width="0.5dp"-->
+                            <!--android:layout_height="10dp"-->
+                            <!--android:background="@color/e"-->
+                            <!--/>-->
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <ProgressBar
+                        android:id="@+id/pb_bid_detail_rtotal"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="7dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        android:indeterminate="false"
+                        android:progress="66"
+                        android:progressDrawable="@drawable/progressbar_platform_invest_detail"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:id="@+id/bid_detail_rtotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="已回总额101元"
+                                android:textColor="@color/c"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:id="@+id/bid_detail_rcapital"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="本金100元"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:id="@+id/bid_detail_rprofit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="收益1元"
+                                android:textSize="12sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:id="@+id/bid_detail_stotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="15dp"
+                                android:text="待回总额51元"
+                                android:textColor="@color/c"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:id="@+id/bid_detail_scapital"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:text="本金40元"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:id="@+id/bid_detail_sprofit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:text="收益11元"
+                                android:textSize="12sp"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <!-- 回款 -->
+
+                <RelativeLayout
+                    android:id="@+id/rl_next_return"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white">
+
+                    <ListView
+                        android:id="@+id/lv_receivable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/g"
+                        android:dividerHeight="1dp"></ListView>
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="24dp"
+                    />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

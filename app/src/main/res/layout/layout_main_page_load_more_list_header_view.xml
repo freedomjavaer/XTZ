@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/layout_data_content"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:visibility="visible">
+
+    <include layout="@layout/layout_banner"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="@color/white"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/xtz_rb_money_manager"
+            style="@style/xtz_tab"
+            android:drawableTop="@mipmap/manage_money_icon"
+            android:text="理财"/>
+
+        <TextView
+            android:id="@+id/xtz_rb_wdpt"
+            style="@style/xtz_tab"
+            android:drawableTop="@mipmap/platform_list_icon"
+            android:text="网贷平台"/>
+
+        <TextView
+            android:id="@+id/xtz_rb_tyq"
+            style="@style/xtz_tab"
+            android:drawableTop="@mipmap/invest_friend_circle_icon"
+            android:text="投友圈"/>
+
+        <TextView
+            android:id="@+id/xtz_rb_jsq"
+            style="@style/xtz_tab"
+            android:drawableTop="@mipmap/calculator_icon"
+            android:text="网贷计算器"/>
+
+    </LinearLayout>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="10dp"-->
+        <!--android:background="#EFEFF4"/>-->
+
+    <com.ypwl.xiaotouzi.view.fancycoverflow.FancyCoverFlow
+        android:id="@+id/fancyCoverFlow"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:background="#EFEFF4"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/advertisement_banner"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/pic_021"/>
+
+
+
+</LinearLayout>
+

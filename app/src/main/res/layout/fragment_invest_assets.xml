@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <com.andview.refreshview.XRefreshView
+        android:id="@+id/srl_invest_assets"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ypwl.xiaotouzi.view.stickylistheaders.ExpandableStickyListHeadersListView
+            android:id="@+id/invest_assets_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/invest_assets_listview_line"
+            android:dividerHeight="1px"/>
+
+    </com.andview.refreshview.XRefreshView>
+
+
+</RelativeLayout>

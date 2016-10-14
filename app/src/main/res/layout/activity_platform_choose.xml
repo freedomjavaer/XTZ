@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_primary">
+
+        <ImageView
+            android:id="@+id/iv_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@mipmap/arrow_to_left"/>
+
+        <com.ypwl.xiaotouzi.view.ContainsEmojiEditText
+            android:id="@+id/et_choose_platform_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/platform_edittext_bg_shape"
+            android:drawableLeft="@mipmap/search_icon"
+            android:gravity="center_vertical"
+            android:hint="@string/activity_txt_fill_in_the_platform_name"
+            android:maxLength="18"
+            android:singleLine="true"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_no_data_view"/>
+
+    <FrameLayout
+        android:id="@+id/layout_platform_choose_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/layout_follow_container"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone"/>
+
+                <FrameLayout
+                    android:id="@+id/layout_history_container"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/layout_hot_recommend_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/f"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="none"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+</LinearLayout>

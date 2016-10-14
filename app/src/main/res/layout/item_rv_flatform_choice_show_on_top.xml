@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="26dp"
+    android:layout_gravity="center"
+    android:background="#e9e9e9">
+
+    <TextView
+        android:id="@+id/platform_item_choice_btn_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/x"
+        android:paddingRight="16dp"
+        android:singleLine="true"
+        android:text="  信 用  "
+        android:textColor="@color/style_current_title"
+        android:textSize="11sp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/calFullList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:visibility="invisible">
+
+        <include layout="@layout/layout_calculator_result_list_header_item"/>
+
+        <View
+            android:id="@+id/calLineView"
+            android:layout_below="@+id/ll_calculator_result_list_header"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/f"/>
+        <Button
+            android:id="@+id/calFullListBtn"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="21dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/btn_018_reverse"
+            android:clickable="true"
+            android:rotationY="180"/>
+
+        <ListView
+            android:id="@+id/calDataLv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="#cccccc"
+            android:dividerHeight="1px"
+            android:layout_below="@id/calLineView"
+            android:layout_above="@id/calFullListBtn"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:scrollbars="none"/>
+    </RelativeLayout>
+</merge>

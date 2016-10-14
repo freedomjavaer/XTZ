@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/calHalfList"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false">
+
+    <Button
+        android:id="@+id/calHalfListBtn"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@mipmap/btn_018"/>
+
+    <include layout="@layout/layout_calculator_result_list_header_item"/>
+
+    <View
+        android:id="@+id/calculator_half_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/ll_calculator_result_list_header"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/f"/>
+
+    <LinearLayout
+        android:id="@+id/ll_calculator_half_data_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/calHalfListBtn"
+        android:layout_below="@+id/calculator_half_divider"
+        android:orientation="vertical"/>
+
+</RelativeLayout>

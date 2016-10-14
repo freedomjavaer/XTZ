@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/h">
+
+    <com.ypwl.xiaotouzi.view.ContainsEmojiEditText
+        android:id="@+id/tv_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/platform_edittext_bg_shape"
+        android:gravity="center_horizontal"
+        android:hint="请输入昵称"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="@color/c"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

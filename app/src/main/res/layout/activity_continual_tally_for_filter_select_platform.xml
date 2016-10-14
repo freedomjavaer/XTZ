@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_title"/>
+
+    <include layout="@layout/layout_no_data_view"/>
+
+    <FrameLayout
+        android:id="@+id/activity_continual_tally_for_filter_select_platform_fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/continual_tally_bg">
+
+        <ListView
+            android:id="@+id/activity_continual_tally_for_filter_select_platform_lv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:dividerHeight="0px"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:overScrollMode="never"
+            android:scrollbars="none"/>
+
+        <com.ypwl.xiaotouzi.view.SideBar
+            android:id="@+id/activity_continual_tally_for_filter_select_platform_sb_letters"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/activity_continual_tally_for_filter_select_platform_tv_show_letter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/sidebar_letter_hightlight_show_bg_shape"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="@color/d"
+            android:textSize="24sp"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+</LinearLayout>

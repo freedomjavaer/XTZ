@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/f"
+                android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/view_tv_month"
+        android:layout_width="60dp"
+        android:layout_height="23dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/compare_month_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="按月"
+        android:textColor="@drawable/type_textcolor_selector"/>
+
+    <TextView
+        android:id="@+id/view_tv_week"
+        android:layout_width="60dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="-1dp"
+        android:layout_toLeftOf="@id/view_tv_month"
+        android:background="@drawable/compare_week_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="按周"
+        android:textColor="@drawable/type_textcolor_selector"/>
+</RelativeLayout>

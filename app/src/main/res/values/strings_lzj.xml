@@ -1,0 +1,145 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="hint_net_problem">网络似乎有问题</string>
+    <string name="http_request_hint_wrong_tag">请求标记不能为空或者null!</string>
+    <string name="http_request_hint_wrong_url">url不能为空或者null!</string>
+    <string name="hint_unknown_error">未知错误</string>
+    <string name="btn_text_ok">确定</string>
+    <string name="btn_text_cancle">取消</string>
+    <string name="loading_hint_ing">数据加载中…</string>
+    <string name="loading_hint_empty">暂无数据</string>
+    <string name="loading_hint_error">重新加载</string>
+    <string name="loadmore_status_nomore">没有更多内容了</string>
+
+    <!--登录注册页面-->
+    <string name="login_regist_openning_weibo">正在打开微博</string>
+    <string name="login_regist_openning_weixin">正在打开微信</string>
+    <string name="login_regist_openning_qq">正在打开QQ</string>
+    <string name="login_regist_hint_login_ing">正在登录</string>
+    <string name="login_regist_hint_login_failed">登录失败</string>
+    <string name="login_regist_hint_login_success">登录成功</string>
+    <string name="login_regist_hint_login_error_third_platform_type">第三方平台type不合法</string>
+    <string name="login_regist_hint_login_error_openid_null">openid为空</string>
+    <string name="login_regist_hint_login_error_nickname_null">昵称为空</string>
+    <string name="login_regist_hint_login_error_os_type">手机类型错误</string>
+
+    <!--登录页面-->
+    <string name="login_hint_error_phone_number">手机号不能为空</string>
+    <string name="login_hint_error_phonenumber_or_password">手机号或密码错误，请重新输入</string>
+    <string name="login_hint_error_os_type">手机类型不支持</string>
+
+    <!--忘记密码-->
+    <string name="reset_psw_hint_input_phone_number">请输入正确的手机号码</string>
+    <string name="reset_psw_hint_get_check_code_failed">获取验证码失败</string>
+    <string name="reset_psw_hint_sms_send_success">短信已发送</string>
+    <string name="reset_psw_hint_invalid_phone_number">无效手机号</string>
+    <string name="reset_psw_hint_phone_number_not_bind">手机号未绑定</string>
+    <string name="reset_psw_hint_sms_gap_time_too_short">短信请求过于频繁</string>
+    <string name="reset_psw_hint_sms_send_failed">发送短信失败</string>
+    <string name="reset_psw_x_after_can_resend">%ds后重发</string>
+    <string name="reset_psw_can_resend">重新发送</string>
+    <string name="reset_psw_hint_get_check_code">请获取验证码</string>
+    <string name="reset_psw_hint_input_check_code">请输入验证码</string>
+    <string name="reset_psw_hint_check_failed">验证失败</string>
+    <string name="reset_psw_hint_check_code_invalid">验证码已失效</string>
+    <string name="reset_psw_hint_check_code_wrong">验证码不正确</string>
+
+    <!--填写新密码-->
+    <string name="submmit_new_psw_hint_no_token">未获取到新的token</string>
+    <string name="submmit_new_psw_hint_psw_null">密码不能为空</string>
+    <string name="submmit_new_psw_hint_psw_not_agreed">两次输入的密码不一致</string>
+    <string name="submmit_new_psw_hint_success">修改成功,请用新密码登录</string>
+    <string name="submmit_new_psw_hint_token_illegal">token非法</string>
+    <string name="submmit_new_psw_hint_psw_too_short">密码少于6位</string>
+    <string name="submmit_new_psw_hint_psw_too_long">密码大于16位</string>
+    <string name="submmit_new_psw_hint_psw_submmit_error">新密码提交失败</string>
+
+    <!--注册页面-->
+    <string name="regist_hint_please_sure_deal">请确定已阅读并同意《用户协议和免责声明》</string>
+    <string name="regist_hint_regist_success">注册成功</string>
+    <string name="regist_hint_phone_exist">手机号已存在</string>
+    <string name="regist_hint_regist_failed">注册失败</string>
+
+    <!--主页-->
+    <string name="main_hint_login_abnormal">登录异常</string>
+    <string name="main_hint_exit_app">再按一次退出程序</string>
+    <string name="main_tab_text_platform">网贷平台</string>
+    <string name="main_tab_text_myaccount">我的投资</string>
+    <string name="main_tab_text_calculator">计算器</string>
+    <string name="main_tab_text_myinfo">更多</string>
+
+    <!--我的记账-->
+    <string name="fragment_myaccount_getinfo_failed">获取我的记账信息失败</string>
+    <string name="fragment_myaccount_expire_money_msg">¥ %s</string>
+    <string name="fragment_myaccount_expire_number_msg">共%s期</string>
+
+    <!--我的-->
+    <string name="fragment_myinfo_exit_login">退出登录</string>
+    <string name="fragment_myinfo_login">登录</string>
+    <string name="fragment_myinfo_not_login">未登录</string>
+    <string name="fragment_myinfo_share_failed">获取分享信息失败</string>
+    <string name="fragment_myinfo_exit_login_hint">确定退出登录？</string>
+
+    <!--个人资料-->
+    <string name="user_info_change_avatar_from_album">从相册选取</string>
+    <string name="user_info_change_avatar_from_camera">拍照</string>
+    <string name="user_info_change_avatar_from_hint_failed">裁剪图片失败,请重新操作</string>
+    <string name="user_info_change_avatar_from_hint_failed_get">获取图片失败,请重新操作</string>
+    <string name="user_info_change_avatar_upload_failed">头像更新失败</string>
+    <string name="user_info_change_avatar_upload_success">头像更新成功</string>
+    <string name="user_info_change_avatar_upload_failed_hint_too_big">上传图片大小过大</string>
+    <string name="user_info_change_avatar_upload_failed_hint_illegal_type">上传图片类型不合法，必须是jpg，gif，bmp，png</string>
+    <string name="user_info_change_avatar_upload_failed_hint_server_receiv_failed">服务器接收文件失败</string>
+    <string name="user_info_change_avatar_upload_failed_hint_img_null">上传图片为空</string>
+    <string name="user_info_change_save_hint_not_input_name">请输入昵称</string>
+    <string name="user_info_change_save_hint_failed">个人信息更新失败</string>
+    <string name="user_info_change_save_hint_success">更新成功</string>
+
+    <!--绑定手机号-->
+    <string name="bind_phone_hint_failed">绑定失败</string>
+    <string name="bind_phone_hint_success">绑定成功</string>
+
+    <!--优惠活动页面-->
+    <string name="huodong_end_time">截止%s</string>
+
+
+    <!--标的详情-->
+    <string name="bid_detail_period_remark">备注:%s</string>
+
+    <!--话题-->
+    <string name="topic_info_focusable">关注话题</string>
+    <string name="topic_info_unfocusable">取消关注</string>
+    <string name="topic_info_title">话题:</string>
+    <string name="topic_info_author">话题主:</string>
+    <string name="topic_info_desc">简介</string>
+    <string name="topic_info_hint_ask_change_focusstate">确定取消关注?</string>
+
+    <!--同城在线-->
+    <string name="samecity_online_title_city">深圳</string>
+    <string name="samecity_online_title_myword">我的发言</string>
+    <string name="samecity_online_title_ame"><Data><![CDATA[@我]]></Data></string>
+
+    <!--我的投资-资产-平台详情-->
+    <string name="myinvest_platform_detailt_total_wait">待回总额</string>
+    <string name="myinvest_platform_detailt_total_profit">总收益</string>
+    <string name="myinvest_platform_detailt_total_rate">总年化率</string>
+    <string name="myinvest_platform_detailt_bid_ing">在投标的</string>
+    <string name="myinvest_platform_detailt_bid_end">结束标的</string>
+    <string name="myinvest_platform_detailt_list_totalbid">投资%s</string>
+    <string name="myinvest_platform_detailt_list_totalprofit">收益%s</string>
+    <string name="myinvest_platform_detailt_item_time_end">%s结束</string>
+    <string name="myinvest_platform_detailt_item_time_bid">%s起息</string>
+
+    <string name="register_user_protocol">
+        1、一切晓投资用户在下载并浏览晓投资APP软件时均被视为已经仔细阅读本条款并完全同意。凡以任何方式登录本APP，或直接、间接使用本APP资料者，均被视为自愿接受本网站相关声明和用户服务协议的约束。\n
+        2、晓投资APP转载的内容并不代表晓投资APP之意见及观点，也不意味着本网赞同其观点或证实其内容的真实性。\n
+        3、晓投资APP转载的文字、图片等资料均由本APP用户提供，其真实性、准确性和合法性由信息发布人负责。晓投资APP不提供任何保证，并不承担任何法律责任。\n
+        4、晓投资APP所转载的文字、图片等资料，如果侵犯了第三方的知识产权或其他权利，责任由作者或转载者本人承担，本APP对此不承担责任。\n
+        5、晓投资APP不保证为向用户提供便利而设置的外部链接的准确性和完整性，同时，对于该外部链接指向的不由晓投资APP实际控制的任何网页上的内容，晓投资APP不承担任何责任。\n
+        6、用户明确并同意其使用晓投资APP网络服务所存在的风险将完全由其本人承担；因其使用晓投资APP网络服务而产生的一切后果也由其本人承担，晓投资APP对此不承担任何责任。\n
+        7、除晓投资APP注明之服务条款外，其它因不当使用本APP而导致的任何意外、疏忽、合约毁坏、诽谤、版权或其他知识产权侵犯及其所造成的任何损失，晓投资APP概不负责，亦不承担任何法律责任。\n
+        8、对于因不可抗力或因黑客攻击、通讯线路中断等晓投资APP不能控制的原因造成的网络服务中断或其他缺陷，导致用户不能正常使用晓投资APP，晓投资APP不承担任何责任，但将尽力减少因此给用户造成的损失或影响。\n
+        9、本声明未涉及的问题请参见国家有关法律法规，当本声明与国家有关法律法规冲突时，以国家法律法规为准。\n
+        10、本网站相关声明版权及其修改权、更新权和最终解释权均属晓投资APP所有。\n
+    </string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DropDownMenu">
+        <!--tab组布局的宽度-->
+        <attr name="dm_size_tab_layout_width" format="dimension"/>
+        <!--tab组布局的高度-->
+        <attr name="dm_size_tab_layout_heigth" format="dimension"/>
+        <!--popView布局的宽度-->
+        <attr name="dm_size_popview_layout_width" format="dimension"/>
+        <!--tab和内容分割下划线颜色-->
+        <attr name="dm_color_underline" format="color"/>
+        <!--tab之间分割线颜色-->
+        <attr name="dm_color_divider" format="color"/>
+        <!--选中tab文字颜色-->
+        <attr name="dm_color_text_selected" format="color"/>
+        <!--未选中tab文字颜色-->
+        <attr name="dm_color_text_unselected" format="color"/>
+        <!--tab容器背景颜色-->
+        <attr name="dm_color_tabs_backgound" format="color"/>
+        <!--内容视图遮盖层颜色-->
+        <attr name="dm_color_mask" format="color"/>
+        <!--tab文字大小-->
+        <attr name="dm_size_text" format="dimension"/>
+        <!--选中tab文字周边指示器图片-->
+        <attr name="dm_icon_selected" format="reference"/>
+        <!--未选中tab文字周边指示器图片-->
+        <attr name="dm_icon_unselected" format="reference"/>
+        <!--tab文字周边指示器位置:左 上 右 下-->
+        <attr name="dm_icon_position">
+            <enum name="left" value="1"/>
+            <enum name="top" value="2"/>
+            <enum name="right" value="3"/>
+            <enum name="bottom" value="4"/>
+        </attr>
+    </declare-styleable>
+</resources>

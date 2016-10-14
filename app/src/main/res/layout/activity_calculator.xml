@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <!-- 顶部标题 -->
+    <include layout="@layout/top_title"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 计算器计算结果数据清单 -->
+        <include layout="@layout/layout_calculator_result_list_show"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_cal_content1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/calculator_result_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/linearLayout"/>
+
+            <!-- 键盘布局 -->
+            <com.ypwl.xiaotouzi.view.CustonCalculatorKeyBoardView
+                android:id="@+id/custom_key_board"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- 计算器参数设置 -->
+            <include layout="@layout/layout_calculator_parameter_set"/>
+
+            <!-- 点 -->
+            <ImageView
+                android:id="@+id/navImg"
+                android:layout_above="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@mipmap/pic_058"/>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

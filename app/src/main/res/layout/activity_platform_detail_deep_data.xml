@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+  <include layout="@layout/layout_no_data_view"/>
+
+  <LinearLayout
+      android:id="@+id/ll_deep_data_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/g"
+        android:orientation="horizontal">
+
+      <ImageView
+          android:id="@+id/iv_platform_deep_data_back"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:padding="12dp"
+          android:layout_gravity="center"
+          android:layout_marginLeft="2dp"
+          android:src="@drawable/deep_data_back"/>
+
+      <TextView
+          android:id="@+id/tv_platform_deep_data_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="平台名称"
+          android:textColor="@color/black"
+          android:textSize="20sp"/>
+
+      <View
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:id="@+id/tv_platform_detail_deep_data_day"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:background="@drawable/compare_week_selector"
+          android:clickable="true"
+          android:paddingBottom="2dp"
+          android:paddingLeft="20dp"
+          android:paddingRight="20dp"
+          android:paddingTop="2dp"
+          android:text="@string/platform_detail_deep_data_day"
+          android:textColor="@color/selector_btn_deep_data_textcolor"
+          android:textSize="16sp"/>
+
+      <TextView
+          android:id="@+id/tv_platform_detail_deep_data_week"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:background="@drawable/selector_btn_detail_data"
+          android:clickable="true"
+          android:paddingBottom="2dp"
+          android:paddingLeft="20dp"
+          android:paddingRight="20dp"
+          android:paddingTop="2dp"
+          android:text="@string/platform_detail_deep_data_week"
+          android:textColor="@color/selector_btn_deep_data_textcolor"
+          android:textSize="16sp"/>
+
+      <TextView
+          android:id="@+id/tv_platform_detail_deep_data_month"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginRight="17dp"
+          android:background="@drawable/compare_month_selector"
+          android:clickable="true"
+          android:paddingBottom="2dp"
+          android:paddingLeft="20dp"
+          android:paddingRight="20dp"
+          android:paddingTop="2dp"
+          android:text="@string/platform_detail_deep_data_month"
+          android:textColor="@color/selector_btn_deep_data_textcolor"
+          android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+      <!--图表-->
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_chart_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+          <TextView
+              android:id="@+id/tv_platform_deep_data_left_y"
+              android:layout_marginLeft="18dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="成交量(万)"/>
+
+          <View
+              android:layout_width="20dp"
+              android:layout_height="10dp"
+              android:layout_marginLeft="10dp"
+              android:layout_gravity="center_vertical"
+              android:background="@color/b"/>
+
+          <View
+              android:layout_width="0dp"
+              android:layout_height="1dp"
+              android:layout_weight="1"/>
+
+          <LinearLayout
+              android:id="@+id/ll_piechart_right_title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/chart_show"/>
+
+            <TextView
+                android:id="@+id/tv_platform_deep_data_right_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="利率(%)"/>
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.CombinedChart
+            android:id="@+id/platform_deep_data_combinedchart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"/>
+
+      </LinearLayout>
+
+
+      <!--选择条件-->
+      <LinearLayout
+          android:layout_width="80dp"
+          android:layout_height="match_parent"
+          android:layout_marginTop="20dp"
+          android:layout_marginBottom="25dp"
+          android:paddingLeft="1dp"
+          android:paddingRight="1dp"
+          android:background="@drawable/shape_rectangle"
+          android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_deep_data_up_arrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/up_arrow"/>
+
+        <ListView
+            android:id="@+id/lv_platform_deep_data"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:cacheColorHint="@color/h"
+            android:background="@color/h"
+            android:listSelector="@drawable/selector_item_deep_data">
+
+        </ListView>
+
+        <ImageView
+            android:id="@+id/iv_deep_data_down_arrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/down_arrow"/>
+
+      </LinearLayout>
+      <!--选择条件-->
+
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+
+
+</LinearLayout>

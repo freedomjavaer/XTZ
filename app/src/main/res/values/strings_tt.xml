@@ -1,0 +1,81 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!--平台对比页面-->
+    <string name="platform_compare">平台对比</string>
+    <string name="no_choose_compare_platform">没有选择对比的平台</string>
+    <string name="platform_compare_data_init_error">平台对比数据初始化错误</string>
+    <string name="platform_compare_net_error">网络似乎有问题</string>
+    <string name="platform_compare_followed">您已关注这个平台</string>
+    <string name="platform_compare_follow_success">关注成功</string>
+    <string name="platform_compare_follow_fault">关注失败</string>
+
+    <!-- 选择平台页面-->
+    <string name="platform_choose">选择平台</string>
+
+    <!--晓投资 -->
+    <string name="main_tab_text_xtz">晓投资</string>
+    <string name="main_tab_text_finance_market">金融超市</string>
+    <string name="fragment_xtz_hot_post">热门帖子</string>
+    <string name="fragment_xtz_register">注册</string>
+    <string name="fragment_xtz_login">登录</string>
+    <string name="fragment_xtz_topic">话题</string>
+    <string name="fragment_xtz_hot">热门</string>
+    <string name="activity_add_topic_title">关注话题</string>
+    <string name="activity_tie_zi_detail_comment_hint">让大家听到你的声音</string>
+
+    <!-- 我的关注页面-->
+    <string name="my_follow">我的关注</string>
+    <string name="add_to_compare">加入对比</string>
+    <string name="please_choose_platform">请选择对比平台</string>
+    <string name="most_choose_platform">最多选择5个平台</string>
+
+    <!-- 视频播放页面-->
+    <string name="video_no_resource">暂无视频资源</string>
+    <string name="resource_error">资源错误</string>
+
+    <!-- 记账页面-->
+    <string name="tally">记账</string>
+    <string name="auto_jizhang_txt">自动记账</string>
+    <string name="model_jizhang_txt">模版记账</string>
+    <string name="common_tally_project_name">项目名称</string>
+
+    <!-- 计算器 -->
+    <string name="activity_txt_next_term">下一项</string>
+
+    <!-- 注册声明和用户协议 -->
+    <string name="register_protocol_title">晓投资用户协议和免责声明</string>
+
+    <!-- 自动记账同步数据 -->
+    <string name="auto_tally_sync_data">同步数据中，成功后会通知您！</string>
+    <string name="auto_tally_sync_data_ing">该平台正在同步，请稍等片刻！</string>
+    <string name="auto_tally_sync_operation_often">您几分钟前已同步，请稍后再试！</string>
+    <string name="auto_tally_sync_service_busy">服务器繁忙，请稍后再试！</string>
+
+    <string name="post_detail_nickname_icon">确定头像&amp;昵称</string>
+    <string name="post_detail_nickname_empty">昵称不能为空</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="buffering">缓冲加载中...</string>
+    <string name="sort">分类</string>
+
+    <string name="vitamio_name">播放器</string>
+    <string name="vitamio_init_decoders">初始化解码中...</string>
+    <string name="vitamio_videoview_error_title">解码失败</string>
+    <string name="vitamio_videoview_error_text_invalid_progressive_playback">reaming  device.</string>
+    <string name="vitamio_videoview_error_text_unknown">对不起，暂时无法观看视频</string>
+    <string name="vitamio_videoview_error_button">确定</string>
+    <string name="mediacontroller_play_pause">播放/暂停</string>
+
+    <string name="please_login_first">请先登录</string>
+
+    <string name="finance_market_credit_card">信用卡申请</string>
+    <string name="sans_serif" translatable="false">sans-serif</string>
+
+    <string name="question_and_feedback">常见问题与反馈</string>
+    <string name="submit_your_opinion">提交您的意见</string>
+    <string name="statistics_analysis">统计分析</string>
+    <string name="history_assets">历史资产</string>
+    <string name="question_and_feedback_digits">0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.@_</string>
+</resources>

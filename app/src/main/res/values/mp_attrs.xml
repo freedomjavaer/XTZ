@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MagicProgressBar">
+        <attr name="mpb_percent" format="float"/>
+        <attr name="mpb_fill_color" format="color"/>
+        <attr name="mpb_background_color" format="color"/>
+        <attr name="mpb_flat" format="boolean"/>
+    </declare-styleable>
+
+</resources>

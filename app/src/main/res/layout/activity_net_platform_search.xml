@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_net_platforms_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_primary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.ypwl.xiaotouzi.view.ContainsEmojiEditText
+            android:id="@+id/platform_search"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/platform_edittext_bg_shape"
+            android:drawableLeft="@mipmap/search_icon"
+            android:gravity="center_vertical"
+            android:hint="@string/activity_txt_fill_in_the_platform_name"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_net_platform_search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/selector_color_bg_blue_trans"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:text="取消"
+            android:textColor="@color/a"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ListView
+            android:id="@+id/lv_net_platform_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/ll_search_platform_empty_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="156dp"
+                android:layout_height="156dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"
+                android:src="@mipmap/cat"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"
+                android:text="平台暂不存在"
+                android:textColor="#3db5e6"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/layout_hint_pb_loading"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="150dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:indeterminateDrawable="@drawable/loading_progress_wait" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/style_current_title">
+
+        <LinearLayout
+            android:id="@+id/layout_title_back_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?android:selectableItemBackground"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/arrow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="晓投资"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.ypwl.xiaotouzi.view.DropMenu
+        android:id="@+id/dm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:dm_color_mask="@color/transparent"
+        app:dm_color_tabs_backgound="@color/transparent"
+        app:dm_color_text_selected="@color/white"
+        app:dm_color_text_unselected="@color/white"
+        app:dm_color_underline="@color/style_current_title"
+        app:dm_icon_position="right"
+        app:dm_icon_selected="@mipmap/btn_im_reverse"
+        app:dm_icon_unselected="@mipmap/btn_im"
+        app:dm_size_popview_layout_width="150dp"
+        app:dm_size_tab_layout_heigth="?attr/actionBarSize"
+        app:dm_size_tab_layout_width="150dp"
+        app:dm_size_text="20sp"/>
+
+</FrameLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/h">
+
+    <include
+        android:id="@+id/viewstub_empty_data"
+        layout="@layout/layout_viewstub_empty_data"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true">
+
+        <com.andview.refreshview.XRefreshView
+            android:id="@+id/layout_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.ypwl.xiaotouzi.view.stickylistheaders.StickyListHeadersListView
+                android:id="@+id/invest_recent_returned_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/f"
+                android:dividerHeight="1dp"/>
+
+        </com.andview.refreshview.XRefreshView>
+
+        <LinearLayout
+            android:id="@+id/ll_back_option_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_invest_recent_returned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="近期回款"
+                    android:textColor="#000000"
+                    android:textSize="15sp"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_recent_all_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="全部回款"
+                        android:textColor="#2b7de1"
+                        android:textSize="15dp"/>
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center_vertical"
+                        android:rotation="180"
+                        android:src="@mipmap/arrow_to_left"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/f"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 当前主题色、title色 -->
+    <color name="style_current_title">@color/style_4.3_title</color>
+    <!-- 4.3主题色、title色 -->
+    <color name="style_4.3_title">#3487ea</color>
+
+    <color name="base_text_black">#2C2C2C</color>
+    <color name="base_text_gray">#D5D5D5</color>
+    <color name="base_line">#C8C7CC</color>
+    <color name="base_half_transparent">#7f000000</color><!-- 半透明 -->
+    <color name="base_10_transparent">#19000000</color><!-- 10%透明 -->
+
+    <!-- 记账页面 -->
+    <color name="keep_accounts_spacing">#EBEBEB</color>
+    <color name="keep_accounts_line">#CCCCCC</color>
+    <color name="keep_accounts_bg">@android:color/white</color>
+    <color name="keep_accounts_text_left_title">@android:color/darker_gray</color>
+    <color name="keep_accounts_text_key">@color/d</color>
+    <color name="keep_accounts_text_value">#333333</color>
+    <color name="keep_accounts_text_hint">@color/base_text_gray</color>
+    <!-- <color name="keep_accounts_rbtn_select">#3DB5E6</color>-->
+    <color name="keep_accounts_rbtn_select">@color/keep_accounts_btn_keep</color>
+    <color name="keep_accounts_btn_keep_again">#0AA9DA</color>
+    <color name="keep_accounts_btn_keep">#2B7DE0</color>
+    <color name="aaa">#7f47d047</color>
+
+
+    <!-- 流水资产 -->
+    <color name="continual_tally_line">#C8C7CC</color>
+    <color name="continual_tally_text_black">#000000</color>
+    <color name="continual_tally_text_gray">#8E8E93</color>
+    <color name="continual_tally_tag_green">#00BE00</color>
+    <color name="continual_tally_tag_red">#FE2A2A</color>
+    <color name="continual_tally_tag_gray">#c7c7c7</color>
+    <color name="continual_tally_bg">#EFEFF4</color>
+
+    <!-- 流水资产筛选 -->
+    <color name="continual_tally_filter_text_blue">#007AFF</color>
+    <color name="continual_tally_filter_text_last_back_gray">#6E6E70</color>
+    <color name="continual_tally_filter_select_platform_letter">#157DFB</color>
+
+    <!-- 金融超市 -->
+    <color name="finance_supermarket_yellow">@color/yellow</color>
+    <color name="finance_supermarket_bg">#FAFBFB</color>
+    <color name="finance_supermarket_item_space">#F2F4F5</color>
+    <color name="finance_supermarket_title_unselect">#8E8E93</color>
+    <color name="finance_supermarket_title_select">@color/style_current_title</color>
+    <color name="finance_supermarket_text_name">@color/base_text_black</color>
+    <color name="finance_supermarket_text_info">@color/finance_supermarket_title_unselect</color>
+
+    <!-- 金融超市 - 精选 -->
+    <color name="finance_supermarket_choice_text_black">@color/base_text_black</color>
+    <color name="finance_supermarket_choice_text_red">#FF3838</color>
+    <color name="finance_supermarket_choice_text_gray">#939393</color>
+
+    <!-- 金融超市 - 平台 -->
+    <color name="finance_supermarket_platform_text_black">@color/base_text_black</color>
+    <color name="finance_supermarket_platform_line">#CCCCCC</color>
+
+    <!-- 金融超市 - 平台标的详情 -->
+    <color name="finance_supermarket_of_target_detail_bg_blue">@color/style_current_title</color>
+    <color name="finance_supermarket_of_target_detail_line_blue">@color/style_current_title</color>
+    <color name="finance_supermarket_of_target_detail_text_gray">@color/base_text_gray</color>
+    <color name="finance_supermarket_of_target_detail_text_info">@color/d</color>
+
+    <!-- 金融超市 - 平台标的列表 -->
+    <color name="item_finance_supermarket_of_platform_target_tv_name">#494949</color>
+    <color name="item_finance_supermarket_of_platform_target_tv_num_black">#444343</color>
+    <color name="item_finance_supermarket_of_platform_target_tv_gray">#939393</color>
+    <color name="item_finance_supermarket_of_platform_target_tv_red">#ff3838</color>
+
+
+    <!-- 弹窗 -->
+    <color name="popup_text_title">#7C7C7C</color>
+    <color name="popup_text_item">#2C7DE1</color>
+    <color name="popup_line">#CCCCCC</color>
+
+    <!--#FAFBFB-->
+
+    <color name="bg_primary">#FAFBFB</color>
+    <color name="bg_primary_deep">#F3F3F3</color>
+    <color name="bg_window">#F6F7F6</color>
+    <color name="bg_window_deep">#CCCCCC</color>
+
+    <color name="yellow">#FFEE2C</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="alpha_black">#33000000</color>
+    <color name="holo_red_dark">#ffcc0000</color>
+    <color name="title_text">#4E4D4D</color>
+    <color name="title_text_second">@color/a</color>
+
+    <color name="rb_selected">@color/a</color>
+    <color name="txt_light_white">#D5D5D5</color>
+
+    <color name="color_001">#2b7de1</color>
+    <color name="color_002">#3db5e6</color>
+    <color name="color_003">#333333</color>
+    <color name="color_004">#7c7c7c</color>
+    <color name="color_005">#cccccc</color>
+    <color name="color_006">#e9e9e9</color>
+    <color name="color_007">#f9f9f9</color>
+    <color name="color_008">#ffffff</color>
+    <color name="green">#00ff00</color>
+    <color name="red">#ff0000</color>
+    <!--<color name="color_001">#2b7de1</color>-->
+    <!--<color name="color_004">#7c7c7c</color>-->
+
+    <!--正式颜色-->
+    <color name="a">#2B7DE1</color>
+    <color name="b">#3DB5E6</color>
+    <color name="c">#333333</color>
+    <color name="d">#7C7C7C</color>
+    <color name="e">#CCCCCC</color>
+    <color name="f">#E9E9E9</color>
+    <color name="g">#F9F9F9</color>
+    <color name="h">#FFFFFF</color>
+    <color name="aa">#1564C9</color>
+    <color name="hh">#1e8ffe</color>
+    <color name="i">#157EFB</color>
+    <color name="j">#F7F7F7</color>
+
+    <color name="login_btn_normal">#1E90FF</color>
+    <color name="login_btn_pressed">#1564C9</color>
+    <color name="login_text_normal">#1E90FF</color>
+    <color name="login_text_pressed">#1564C9</color>
+    <color name="login_txt_gray">#A0A0A0</color>
+    <color name="login_txt_input_hint">#BBBBBB</color>
+
+    <!-- 我的效果图采样颜色-->
+    <color name="zt">#515151</color>
+    <color name="fgx">#EEEEEE</color>
+    <color name="btm">#55FFFFFF</color>
+
+    <!-- 平台对比周/月选中颜色-->
+    <color name="weekormonth_selected">#03AAD9</color>
+
+    <!-- 平台详情-->
+    <color name="pd_focus_green">#00BE00</color>
+    <color name="pd_text_title">#8E8E93</color>
+    <color name="pd_focus_red">#FD211E</color>
+
+
+    <!-- 平台对比柱状图的颜色-->
+    <color name="barchart_01">#5ad4ff</color>
+    <color name="barchart_02">#8cacff</color>
+    <color name="barchart_03">#62e6b9</color>
+    <color name="barchart_04">#ff8f8f</color>
+    <color name="barchart_05">#ffa77a</color>
+    <color name="table_bg_01">#ebfaff</color>
+
+
+    <!--日历控件颜色  开始-->
+    <color name="caldroid_white">#FFFFFF</color>
+    <color name="caldroid_black">#000000</color>
+    <color name="caldroid_transparent">#00000000</color>
+    <!-- For settings framework -->
+    <color name="caldroid_lighter_gray">#ddd</color>
+    <color name="caldroid_gray">#CCC</color>
+    <color name="caldroid_darker_gray">#aaa</color>
+    <color name="caldroid_middle_gray">#888</color>
+    <!-- A light Holo shade of blue -->
+    <color name="caldroid_holo_blue_light">#ff33b5e5</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="caldroid_holo_blue_dark">#ff0099cc</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="caldroid_sky_blue">#FFA3E8F7</color>
+
+    <color name="caldroid_333">#333</color>
+    <color name="caldroid_555">#555</color>
+    <color name="caldroid_light_red">#ff7f7f</color>
+    <!--日历控件颜色  结束-->
+
+    <!--vitamio视频播放开源库-->
+    <color name="mediacontroller_bg_pressed">#ff53c1bd</color>
+    <color name="mediacontroller_bg">#99000000</color>
+
+    <!--同城在线-->
+    <color name="samecity_online_username">#828282</color>
+    <color name="samecity_online_message">@color/base_text_black</color>
+    <color name="samecity_online_input_hint">#DFDFDF</color>
+    <color name="samecity_online_btn_send_text">#2B7DE0</color>
+
+    <!--customcalendar-->
+    <color name="normal_day">#424242</color>
+    <color name="selected_day_background">#03A9F4</color>
+    <color name="selected_day_red_backgroud">#FF0000</color>
+    <color name="selected_day_text">#FFFFFF</color>
+    <color name="month_day_label_text">#757575</color>
+    <color name="weekends_day">#BDBDBD</color>
+    <color name="current_day_background">#DDDDDD</color>
+    <color name="normal_month">#03A9F4</color>
+
+    <color name="invest_fenbu_item_bg">#F7F7F7</color>
+    <color name="question_feedback_btn_bg">#0078FF</color>
+    <color name="question_feedback_bg">#EFEFF4</color>
+
+    <!--个人资料-->
+    <color name="person_info_bg">#EFEFF4</color>
+    <color name="person_info_txt_hint">#D5D5D5</color>
+    <color name="person_info_txt">#8E8E93</color>
+
+
+</resources>

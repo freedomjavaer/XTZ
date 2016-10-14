@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="54dp"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/f"/>
+
+    <TextView
+        android:id="@+id/tv_add_platform"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16sp"
+        android:background="@drawable/platform_compare_add_bg"
+        android:gravity="center"
+        android:text="+ 添加"
+        android:textColor="@color/h"
+        android:textSize="14sp"/>
+
+</LinearLayout>
